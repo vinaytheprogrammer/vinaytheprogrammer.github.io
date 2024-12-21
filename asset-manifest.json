@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vinayGupta.io/static/css/main.7fdc4bab.css",
-    "main.js": "/vinayGupta.io/static/js/main.d2a3fcc5.js",
-    "index.html": "/vinayGupta.io/index.html",
-    "main.7fdc4bab.css.map": "/vinayGupta.io/static/css/main.7fdc4bab.css.map",
-    "main.d2a3fcc5.js.map": "/vinayGupta.io/static/js/main.d2a3fcc5.js.map"
+    "main.css": "/static/css/main.7fdc4bab.css",
+    "main.js": "/static/js/main.12880701.js",
+    "index.html": "/index.html",
+    "main.7fdc4bab.css.map": "/static/css/main.7fdc4bab.css.map",
+    "main.12880701.js.map": "/static/js/main.12880701.js.map"
   },
   "entrypoints": [
     "static/css/main.7fdc4bab.css",
-    "static/js/main.d2a3fcc5.js"
+    "static/js/main.12880701.js"
   ]
 }
