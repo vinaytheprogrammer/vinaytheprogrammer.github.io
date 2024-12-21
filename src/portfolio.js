@@ -7,9 +7,8 @@ const about = {
   name: "Vinay Gupta",
   role: "Full Stack Developer",
   description:
-    "A Full Stack Developer designs and implements both front-end and back-end solutions, ensuring seamless integration and functionality across applications.",
-  resume:
-    "https://drive.google.com/file/d/1EitYjBipcmEfBKFUam_gHdJr7LLjr_6n/view?usp=sharing",
+    'A Full Stack Developer designs and implements both front-end and back-end solutions, ensuring seamless integration and functionality across applications.',
+  resume: 'https://drive.google.com/file/d/19om4OGT9LOv5YrqcTWmNHxF7rEnUkMQ0/view',
   social: {
     linkedin: "https://www.linkedin.com/in/vinaygupta-nitjsr/",
     github: "https://github.com/vinaytheprogrammer",
