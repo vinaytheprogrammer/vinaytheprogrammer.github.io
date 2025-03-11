@@ -98,7 +98,11 @@ const skills = [
   'Windows',
   'Linux',
   'Git',
-  'GitHub'
+  'GitHub',
+  'GitLab',
+  'Angular',
+  'LoopBack 4',
+  'Cloudnairy'
 ];
 
 const contact = {
