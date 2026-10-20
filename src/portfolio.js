@@ -1,6 +1,6 @@
 const header = {
   homepage: "https://vinaytheprogrammer.github.io/vinayGupta.io/",
-  title: "Meet Vinay",
+  title: "Meet Anjali",
 };
 
 const about = {
