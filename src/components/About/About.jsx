@@ -1,29 +1,29 @@
 import React from 'react';
-import { Server, Layout, Database, ShieldCheck, Terminal, Award } from 'lucide-react';
+import { Sparkles, Server, Layout, ShieldCheck, Terminal, Award } from 'lucide-react';
 import { about } from '../../portfolio';
 import './About.css';
 
 const About = () => {
   const highlights = [
     {
+      icon: <Sparkles size={22} className="card-icon" />,
+      title: 'Generative AI & Multi-Agent',
+      description: 'Architecting multi-agent LLM systems with Mastra & AWS Bedrock AgentCore, MCP tool integrations, RAG pipelines with pgvector, and context engineering.',
+    },
+    {
       icon: <Server size={22} className="card-icon" />,
-      title: 'Backend Systems',
-      description: 'Architecting robust RESTful services, microservices, and API gateways using Node.js, Express, Go, and LoopBack.',
+      title: 'Backend & Microservices',
+      description: 'Designing high-throughput APIs, fault-tolerant polling systems, and microservices using Fastify, Node.js, Express, LoopBack 4, and Prisma.',
     },
     {
       icon: <Layout size={22} className="card-icon" />,
-      title: 'Modern Frontend',
-      description: 'Building dynamic, responsive, and accessible SPAs with React, Angular, modern CSS, and state management.',
-    },
-    {
-      icon: <Database size={22} className="card-icon" />,
-      title: 'Database Architecture',
-      description: 'Designing normalized schemas, query caching with Redis, and data modeling across MongoDB, PostgreSQL, and MySQL.',
+      title: 'Frontend & Micro-Frontends',
+      description: 'Building responsive SPAs and Single-SPA micro-frontend platforms with React 18, Angular 19 migrations, and D3.js/Highcharts data visualizations.',
     },
     {
       icon: <ShieldCheck size={22} className="card-icon" />,
-      title: 'Security & Auth',
-      description: 'Implementing token-based JWT authentication, OAuth2 workflows, rate limiting, and defensive API validation.',
+      title: 'Enterprise Security & Auth',
+      description: 'Implementing Google OAuth 2.0, PKCE, JWT with Redis-backed refresh token rotation, IDOR vulnerability elimination, and Trivy security hardening.',
     },
   ];
 

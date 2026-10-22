@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Code2, Layout, Server, Database, Wrench } from 'lucide-react';
+import { Sparkles, Code2, Layout, Server, Database, Wrench } from 'lucide-react';
 import { skills } from '../../portfolio';
 import './Skills.css';
 
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState('languages');
+  const [activeCategory, setActiveCategory] = useState('generativeAi');
 
   const categories = [
+    { id: 'generativeAi', label: 'GenAI & LLMs', icon: <Sparkles size={18} /> },
     { id: 'languages', label: 'Languages', icon: <Code2 size={18} /> },
     { id: 'frontend', label: 'Frontend', icon: <Layout size={18} /> },
     { id: 'backend', label: 'Backend & APIs', icon: <Server size={18} /> },
-    { id: 'databases', label: 'Databases', icon: <Database size={18} /> },
+    { id: 'databases', label: 'Databases & ORMs', icon: <Database size={18} /> },
     { id: 'toolsAndDevops', label: 'Tools & DevOps', icon: <Wrench size={18} /> },
   ];
 

@@ -12,13 +12,14 @@ export const header = {
 
 export const about = {
   name: 'Vinay Gupta',
-  role: 'Full Stack Software Engineer',
-  tagline: 'Designing robust backend architectures, distributed services, and responsive web applications.',
+  role: 'Full Stack & Generative AI Developer',
+  tagline: 'Architecting multi-agent LLM systems, enterprise micro-frontends, and high-performance full-stack SaaS platforms.',
   education: 'National Institute of Technology (NIT), Jamshedpur',
   bio: [
-    'I am a Full Stack Software Engineer and alumnus of NIT Jamshedpur with a strong passion for designing resilient systems, scalable microservices, and modern user-centric interfaces.',
-    'My core expertise spans the JavaScript/TypeScript ecosystem (Node.js, Express, React, LoopBack 4), Go, and C++, with comprehensive experience in database design, authentication mechanisms, and API performance optimization.',
-    'Always eager to solve complex engineering challenges and collaborate on impactful, high-scale products.',
+    'I am a Full Stack and Generative AI Developer at SourceFuse Technologies and an alumnus of NIT Jamshedpur (MCA 2025).',
+    'Specialized in Generative AI engineering—designing production-grade multi-agent LLM systems (Mastra, AWS Bedrock AgentCore), RAG pipelines with pgvector, and Model Context Protocol (MCP) integrations for enterprise SaaS platforms.',
+    'My full-stack experience spans end-to-end distributed systems: developing Single-SPA micro-frontend architectures, migrating mission-critical applications from Angular 13 to Angular 19, and building resilient backends using Fastify, Node.js, Express, LoopBack 4, PostgreSQL, and Redis.',
+    'Strong focus on context engineering, token-budget optimization, enterprise authentication (OAuth 2.0, PKCE, JWT with Redis token rotation), and high-reliability system design.',
   ],
   resume: 'https://drive.google.com/file/d/19om4OGT9LOv5YrqcTWmNHxF7rEnUkMQ0/view',
   location: 'India',
@@ -29,128 +30,217 @@ export const about = {
     email: 'vinaygupta.nitjsr@gmail.com',
   },
   metrics: [
-    { label: 'Public Repositories', value: '50+' },
-    { label: 'Core Languages', value: 'JavaScript • TypeScript • C++ • Go' },
-    { label: 'Alma Mater', value: 'NIT Jamshedpur' },
-    { label: 'Focus', value: 'Full Stack & Distributed Systems' },
+    { label: 'Current Role', value: 'SourceFuse Tech' },
+    { label: 'GenAI & Agents', value: 'Mastra • Bedrock • MCP' },
+    { label: 'Alma Mater', value: 'NIT Jamshedpur (MCA)' },
+    { label: 'Core Stack', value: 'React • Fastify • Node • TS' },
   ],
 };
 
 export const experienceAndEducation = [
   {
+    type: 'work',
+    title: 'SourceFuse Technologies India Pvt Ltd',
+    subtitle: 'Junior Software Engineer',
+    period: 'Jan 2025 - Present',
+    description:
+      'Front-line engineer contributing across enterprise client engagements (Fleet Management Ltd, Rakuten Group) and internal Generative AI SaaS initiatives (ARC AI Agent, SourceLoop Microservices).',
+    highlights: [
+      'ARC AI Agent (May 2026 - Present): Architected multi-agent orchestration foundation using Mastra and AWS Bedrock AgentCore with orchestrator, specialized agents, human-in-the-loop gatekeeper, and Zod-validated structured outputs.',
+      'RAG & Context Engineering: Designed pgvector RAG pipeline with re-ranking, PII data sanitization, token-budget management, and LangSmith / OpenTelemetry observability.',
+      'Enterprise Auth & Resilience: Built Google OAuth 2.0 + PKCE + Redis-backed refresh token rotation, fixed critical IDOR security vulnerabilities, and re-architected streaming into a fault-tolerant polling system.',
+      'Rakuten Group Migration (Feb - Mar 2026): Migrated enterprise vendor platform from Angular 13 to Angular 19, resolving Material CSS component inconsistencies and ensuring cross-browser stability.',
+      'Fleet Management Ltd (Aug 2025 - Jan 2026): Developed Single-SPA micro-frontend for QHSE document management (Pdf-lib, CKEditor) and interactive D3.js/Highcharts vessel & POD managers.',
+    ],
+  },
+  {
     type: 'education',
     title: 'National Institute of Technology (NIT), Jamshedpur',
-    subtitle: 'Postgraduate / Computer Applications & Software Engineering',
-    period: 'NIT Jamshedpur, India',
+    subtitle: 'Master of Computer Applications (MCA)',
+    period: '2022 - 2025',
     description:
-      'Rigorous academic coursework in Data Structures & Algorithms, Database Management Systems, Computer Networks, Operating Systems, and Object-Oriented System Design.',
+      'Rigorous postgraduate coursework in Data Structures & Algorithms, Distributed Systems, Database Management Systems, Computer Networks, and Object-Oriented System Design.',
     highlights: [
-      'Built algorithmic problem-solving skills across C++ and Data Structures.',
-      'Active developer in collegiate tech initiatives and project collaborations.',
+      'Strong algorithmic problem-solving foundation across C++ and Data Structures.',
+      'Active developer in collegiate technical initiatives; engineered the campus Dispensary Management System.',
+      'Competitive programmer across LeetCode, Codeforces, and HackerRank.',
+    ],
+  },
+  {
+    type: 'education',
+    title: 'Chhatrapati Shahuji Maharaj University, Kanpur',
+    subtitle: 'Bachelor of Computer Applications (BCA)',
+    period: '2017 - 2020',
+    description:
+      'Academic foundation in Computer Science, software engineering methodologies, database design, and object-oriented programming.',
+    highlights: [
+      'Built early foundations in web development, database modeling, and software architectures.',
+      'Graduated with distinction in core computing subjects.',
     ],
   },
   {
     type: 'work',
-    title: 'LegisForum',
-    subtitle: 'Freelance Full Stack Developer',
-    period: 'Client Engagement',
-    description:
-      'Engineered a complete legal workload management and customer query resolution platform from ground up.',
-    highlights: [
-      'Implemented responsive UI with custom styling and seamless user interaction workflows.',
-      'Constructed backend services for issue tracking, query handling, and administrative dashboards.',
-    ],
-  },
-  {
-    type: 'work',
-    title: 'Open Source & Independent Engineering',
+    title: 'Open Source & Full Stack Development',
     subtitle: 'Software Creator & Contributor',
-    period: 'Ongoing',
+    period: '2023 - 2024',
     description:
-      'Developed and deployed over 50 projects spanning AI-powered web tools, API proxies, management portals, and algorithmic utilities.',
+      'Engineered and published full-stack applications, AI tools, and system utilities with community recognition.',
     highlights: [
-      'Created ChitChat AI leveraging Google Gemini API with conversational context.',
-      'Architected campus Dispensary Management System managing inventories and patient records.',
+      'Engineered ChitChat AI utilizing Google Gemini API with real-time stream handling and conversational memory.',
+      'Developed API Proxy Server featuring token-bucket rate limiting and Redis response caching.',
+      'Delivered LegisForum freelance portal for case management and client intake.',
     ],
   },
 ];
 
 export const skills = {
+  generativeAi: [
+    { name: 'Mastra Framework', level: 'Advanced' },
+    { name: 'Model Context Protocol (MCP)', level: 'Advanced' },
+    { name: 'AWS Bedrock AgentCore', level: 'Advanced' },
+    { name: 'RAG Pipelines & pgvector', level: 'Advanced' },
+    { name: 'Multi-Agent Orchestration', level: 'Advanced' },
+    { name: 'Context Engineering & Budgeting', level: 'Advanced' },
+    { name: 'LangSmith & OpenTelemetry', level: 'Proficient' },
+    { name: 'Zod (Structured Output Validation)', level: 'Advanced' },
+  ],
   languages: [
+    { name: 'TypeScript', level: 'Advanced' },
     { name: 'JavaScript (ES6+)', level: 'Advanced' },
-    { name: 'TypeScript', level: 'Proficient' },
-    { name: 'C++', level: 'Proficient' },
+    { name: 'C / C++', level: 'Proficient' },
+    { name: 'SQL', level: 'Advanced' },
+    { name: 'HTML5 & CSS3 / SCSS', level: 'Advanced' },
     { name: 'Go (Golang)', level: 'Intermediate' },
-    { name: 'Python', level: 'Intermediate' },
-    { name: 'SQL', level: 'Proficient' },
-    { name: 'HTML5 & CSS3', level: 'Advanced' },
   ],
   frontend: [
-    { name: 'React.js', level: 'Advanced' },
-    { name: 'Angular', level: 'Intermediate' },
+    { name: 'React.js (18+)', level: 'Advanced' },
+    { name: 'Angular (13 -> 19)', level: 'Proficient' },
+    { name: 'Single-SPA (Micro-Frontends)', level: 'Proficient' },
     { name: 'Tailwind CSS', level: 'Advanced' },
-    { name: 'Bootstrap', level: 'Proficient' },
-    { name: 'Responsive Web Design', level: 'Advanced' },
-    { name: 'EJS & Template Engines', level: 'Proficient' },
+    { name: 'Material CSS / UI', level: 'Proficient' },
+    { name: 'Redux Toolkit & Vite', level: 'Advanced' },
+    { name: 'Highcharts & D3.js', level: 'Proficient' },
   ],
   backend: [
+    { name: 'Fastify', level: 'Advanced' },
     { name: 'Node.js', level: 'Advanced' },
     { name: 'Express.js', level: 'Advanced' },
     { name: 'LoopBack 4', level: 'Proficient' },
-    { name: 'RESTful API Architecture', level: 'Advanced' },
-    { name: 'JWT & OAuth2 Authentication', level: 'Proficient' },
-    { name: 'Microservices Design', level: 'Intermediate' },
+    { name: 'Prisma ORM & Sequelize', level: 'Advanced' },
+    { name: 'OAuth 2.0, JWT & PKCE', level: 'Advanced' },
+    { name: 'REST & Serverless APIs', level: 'Advanced' },
   ],
   databases: [
-    { name: 'MongoDB & Mongoose', level: 'Advanced' },
-    { name: 'MySQL', level: 'Proficient' },
-    { name: 'PostgreSQL', level: 'Intermediate' },
-    { name: 'Redis (Caching)', level: 'Intermediate' },
+    { name: 'PostgreSQL & pgvector', level: 'Advanced' },
+    { name: 'MongoDB', level: 'Advanced' },
+    { name: 'Redis (Caching & Refresh Tokens)', level: 'Advanced' },
+    { name: 'MySQL & SQLite', level: 'Proficient' },
   ],
   toolsAndDevops: [
-    { name: 'Git & GitHub', level: 'Advanced' },
+    { name: 'AWS (Bedrock, S3, SES, Lambda)', level: 'Proficient' },
+    { name: 'Git, GitHub & Bitbucket', level: 'Advanced' },
+    { name: 'Claude Code', level: 'Advanced' },
     { name: 'Docker', level: 'Intermediate' },
-    { name: 'CI/CD Pipelines', level: 'Intermediate' },
-    { name: 'Linux / Bash', level: 'Proficient' },
-    { name: 'Postman', level: 'Advanced' },
-    { name: 'Cloudinary CDN', level: 'Proficient' },
+    { name: 'Postman & API Testing', level: 'Advanced' },
+    { name: 'Trivy & SonarQube', level: 'Proficient' },
   ],
 };
 
 export const projects = [
   {
+    name: 'ARC AI Agent Platform',
+    badge: 'GenAI • Multi-Agent SaaS',
+    featured: true,
+    description:
+      'A full-stack enterprise SaaS platform where an LLM-driven multi-agent system transforms project intake forms into complete architecture blueprints in real time with PDF export.',
+    highlights: [
+      'Orchestrates specialized control-plane, question-critic, and document-generator agents using Mastra and AWS Bedrock AgentCore with human-in-the-loop gatekeeper.',
+      'Engineered RAG pipeline with pgvector, re-ranking, static knowledge injection, and PII data sanitization.',
+      'Designed multi-pillar context engineering layer: token-budget management, tool-output summarization, and Zod structured outputs.',
+      'Built Google OAuth 2.0, JWT, PKCE, and Redis-backed refresh token rotation with multi-tenant access control.',
+    ],
+    stack: ['React 18', 'Fastify', 'TypeScript', 'Mastra', 'AWS Bedrock', 'Prisma', 'PostgreSQL (pgvector)', 'Redis', 'LangSmith'],
+    sourceCode: null,
+    livePreview: null,
+  },
+  {
+    name: 'Fleet QHSE Document Management',
+    badge: 'Enterprise • Micro-Frontend',
+    featured: true,
+    description:
+      'A Single-SPA micro-frontend platform engineered for Fleet Management Ltd for secure maritime document management, granular role-based permissions, and in-browser previewing.',
+    highlights: [
+      'Architected role-based user access controls to restrict document visibility across multi-tenant fleet operations.',
+      'Implemented in-browser PDF and image rendering using pdfjs-dist and Pdf-lib.',
+      'Integrated secure document sharing via automated email dispatch across modular UI components.',
+    ],
+    stack: ['React.js', 'Single-SPA', 'Pdf-lib', 'pdfjs-dist', 'CKEditor', 'REST APIs'],
+    sourceCode: null,
+    livePreview: null,
+  },
+  {
+    name: 'Fleet Vessel & POD Interactive Visualizer',
+    badge: 'Frontend • Data Visualization',
+    featured: true,
+    description:
+      'Interactive maritime data visualization and analytics dashboard built for Fleet Management Ltd, delivering real-time vessel monitoring and port-of-discharge tracking.',
+    highlights: [
+      'Engineered dynamic Highcharts and D3.js visualization proof of concepts adhering to maritime analytics standards.',
+      'Optimized application responsiveness across shipboard and desktop devices with SonarQube quality refactoring.',
+      'Wrote comprehensive unit and component test cases to safeguard visual accuracy and prevent regressions.',
+    ],
+    stack: ['React.js', 'Highcharts', 'D3.js', 'SonarQube', 'JavaScript'],
+    sourceCode: null,
+    livePreview: null,
+  },
+  {
+    name: 'Rakuten Vendor Manager Migration',
+    badge: 'Enterprise • Angular 19',
+    featured: false,
+    description:
+      'Large-scale enterprise migration of Rakuten’s vendor management portal from Angular 13 to Angular 19, resolving breaking UI component changes and optimizing stability.',
+    highlights: [
+      'Upgraded Angular framework across enterprise modules while maintaining uninterrupted production workflows.',
+      'Refactored Material CSS components to ensure seamless cross-browser consistency and modern design alignment.',
+      'Conducted rigorous end-to-end regression testing and QA validation walkthroughs.',
+    ],
+    stack: ['Angular 19', 'TypeScript', 'Material CSS', 'Claude Code', 'Chrome DevTools'],
+    sourceCode: null,
+    livePreview: null,
+  },
+  {
     name: 'Dispensary Management System',
     badge: 'Full Stack • Healthcare',
     featured: true,
     description:
-      'A full-featured campus dispensary management system designed to streamline medical inventory, track historical patient records, validate university identifications, and automate supply alerts.',
+      'Full-stack medical dispensary and inventory management web application with campus ID validation, patient medical history tracking, and automated stock alerts.',
     highlights: [
-      'Role-based authentication & patient validation workflows using Passport.js.',
-      'Automated inventory replenishment tracking and historical medical event logging.',
-      'Responsive interface with Tailwind CSS and React.',
+      'Role-based access control and patient authentication workflow using JWT and Express.',
+      'Automated inventory replenishment tracking and historical medical event auditing.',
+      'Responsive React interface with dynamic search and reporting filters.',
     ],
-    stack: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Passport.js'],
-    sourceCode: 'https://github.com/vinaytheprogrammer/DispensaryMinor',
+    stack: ['React.js', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
+    sourceCode: 'https://github.com/vinaytheprogrammer/Dispensary_management_sys',
     livePreview: 'https://dispensary-management-sys.vercel.app/',
   },
   {
     name: 'ChitChat AI Assistant',
     badge: 'AI & Conversational',
-    featured: true,
+    featured: false,
     description:
       'An intelligent chat application powered by Google Gemini API, delivering context-aware responses, clean markdown rendering, conversational memory, and smooth visual feedback.',
     highlights: [
       'Integrated Google Gemini LLM API with stream handling.',
       'Sleek dark-mode interface with instant message dispatch and animated state indicators.',
     ],
-    stack: ['JavaScript', 'Gemini API', 'Node.js', 'CSS3', 'Express'],
+    stack: ['JavaScript', 'Google Gemini API', 'Node.js', 'CSS3', 'Express'],
     sourceCode: 'https://github.com/vinaytheprogrammer/Chitchat',
     livePreview: 'https://chitchat-0tk9.onrender.com/',
   },
   {
     name: 'API Proxy Server',
     badge: 'Backend • Infrastructure',
-    featured: true,
+    featured: false,
     description:
       'High-throughput API gateway and reverse proxy server featuring in-memory request caching, automated rate-limiting to protect upstream services, and header security sanitization.',
     highlights: [
@@ -161,48 +251,6 @@ export const projects = [
     sourceCode: 'https://github.com/vinaytheprogrammer/API_Proxy_Server',
     livePreview: null,
   },
-  {
-    name: 'LegisForum',
-    badge: 'Client Platform • Freelance',
-    featured: false,
-    description:
-      'Custom web portal developed for a legal consulting firm to manage client inquiries, streamline case workload, and facilitate prompt legal query resolution.',
-    highlights: [
-      'Custom intake form validation with workload tracking.',
-      'Client-first responsive design tested across mobile and desktop breakpoints.',
-    ],
-    stack: ['JavaScript', 'Bootstrap', 'CSS3', 'Node.js'],
-    sourceCode: 'https://github.com/vinaytheprogrammer/legis_forum',
-    livePreview: 'https://legisforum.org/',
-  },
-  {
-    name: 'Blog Post Publishing Platform',
-    badge: 'Full Stack • Publishing',
-    featured: false,
-    description:
-      'A multi-user content publication engine featuring secure JWT authentication, rich text composition, nested commenting, profile customization, and administrative controls.',
-    highlights: [
-      'Complete CRUD operations with role-based access control and JWT session tokens.',
-      'Server-side rendered dynamic views with EJS and Mongoose schemas.',
-    ],
-    stack: ['Node.js', 'Express', 'EJS', 'MongoDB', 'JWT', 'Mongoose'],
-    sourceCode: 'https://github.com/vinaytheprogrammer/Blog_Post',
-    livePreview: 'https://blog-post-75ip.onrender.com/',
-  },
-  {
-    name: 'Cryptographic C++ Engine',
-    badge: 'Algorithms • Security',
-    featured: false,
-    description:
-      'A custom encryption and decryption algorithmic suite in C++ utilizing custom mathematical mapping, emoji cipher layers, and robust file stream handling.',
-    highlights: [
-      'Designed custom substitution cipher logic with deterministic verification.',
-      'High-performance C++ file stream I/O and STL memory management.',
-    ],
-    stack: ['C++', 'STL', 'File I/O', 'Data Structures', 'Cryptography'],
-    sourceCode: 'https://github.com/vinaytheprogrammer/Encryption_and_Decryption',
-    livePreview: null,
-  },
 ];
 
 export const contact = {
@@ -210,5 +258,5 @@ export const contact = {
   linkedin: 'https://www.linkedin.com/in/vinaygupta-nitjsr/',
   github: 'https://github.com/vinaytheprogrammer',
   location: 'India',
-  availability: 'Available for full-time software engineering roles and high-impact freelance projects.',
+  availability: 'Open for full-time Software Engineering roles, Generative AI engineering, and high-impact distributed systems collaborations.',
 };

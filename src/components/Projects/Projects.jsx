@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Lock } from 'lucide-react';
 import { GithubIcon } from '../Icons';
 import { projects } from '../../portfolio';
 import './Projects.css';
@@ -10,15 +10,19 @@ const Projects = () => {
   const categories = [
     { id: 'all', label: 'All Projects' },
     { id: 'featured', label: 'Featured' },
-    { id: 'fullstack', label: 'Full Stack' },
+    { id: 'genai', label: 'GenAI & Agents' },
+    { id: 'fullstack', label: 'Full Stack & Enterprise' },
+    { id: 'frontend', label: 'Frontend & Micro-Frontends' },
     { id: 'backend', label: 'Backend & Systems' },
   ];
 
   const filteredProjects = projects.filter((project) => {
     if (filter === 'all') return true;
     if (filter === 'featured') return project.featured;
-    if (filter === 'fullstack') return project.badge.toLowerCase().includes('full stack');
-    if (filter === 'backend') return project.badge.toLowerCase().includes('backend') || project.badge.toLowerCase().includes('algorithms');
+    if (filter === 'genai') return project.badge.toLowerCase().includes('genai') || project.badge.toLowerCase().includes('ai');
+    if (filter === 'fullstack') return project.badge.toLowerCase().includes('full stack') || project.badge.toLowerCase().includes('saas') || project.badge.toLowerCase().includes('healthcare');
+    if (filter === 'frontend') return project.badge.toLowerCase().includes('frontend') || project.badge.toLowerCase().includes('micro-frontend') || project.badge.toLowerCase().includes('angular');
+    if (filter === 'backend') return project.badge.toLowerCase().includes('backend') || project.badge.toLowerCase().includes('infrastructure');
     return true;
   });
 
@@ -79,6 +83,11 @@ const Projects = () => {
                       <ExternalLink size={18} />
                     </a>
                   )}
+                  {!project.sourceCode && !project.livePreview && (
+                    <span className="project-icon-link" title="Enterprise Repository (Proprietary)">
+                      <Lock size={16} />
+                    </span>
+                  )}
                 </div>
               </div>
 
@@ -124,6 +133,12 @@ const Projects = () => {
                       <GithubIcon size={14} />
                       <span>Code</span>
                     </a>
+                  )}
+                  {!project.livePreview && !project.sourceCode && (
+                    <span className="enterprise-tag">
+                      <Lock size={13} />
+                      <span>Enterprise Platform</span>
+                    </span>
                   )}
                 </div>
               </div>
