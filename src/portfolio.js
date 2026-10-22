@@ -12,14 +12,14 @@ export const header = {
 
 export const about = {
   name: 'Vinay Gupta',
-  role: 'Full Stack & Generative AI Developer',
-  tagline: 'Architecting multi-agent LLM systems, enterprise micro-frontends, and high-performance full-stack SaaS platforms.',
-  education: 'National Institute of Technology (NIT), Jamshedpur',
+  role: 'Full Stack & Generative AI Developer | Freelancer & CS Educator',
+  tagline: 'Architecting multi-agent LLM systems, full-stack enterprise platforms, open-source tooling, and mentoring future engineers.',
+  education: 'NIT Jamshedpur (MCA) • UGC NET JRF Aspirant',
   bio: [
-    'I am a Full Stack and Generative AI Developer at SourceFuse Technologies and an alumnus of NIT Jamshedpur (MCA 2025).',
+    'I am a Full Stack and Generative AI Developer at SourceFuse Technologies, an active Open Source Contributor, Freelance Consultant, and an alumnus of NIT Jamshedpur (MCA 2025).',
     'Specialized in Generative AI engineering—designing production-grade multi-agent LLM systems (Mastra, AWS Bedrock AgentCore), RAG pipelines with pgvector, and Model Context Protocol (MCP) integrations for enterprise SaaS platforms.',
-    'My full-stack experience spans end-to-end distributed systems: developing Single-SPA micro-frontend architectures, migrating mission-critical applications from Angular 13 to Angular 19, and building resilient backends using Fastify, Node.js, Express, LoopBack 4, PostgreSQL, and Redis.',
-    'Strong focus on context engineering, token-budget optimization, enterprise authentication (OAuth 2.0, PKCE, JWT with Redis token rotation), and high-reliability system design.',
+    'On the client & freelance front, I help founders and businesses build high-performance full-stack MVPs, integrate custom AI agents, execute complex framework migrations (Angular 13 to 19), and build scalable microservices using Fastify, Node.js, Express, React 18, and PostgreSQL.',
+    'Passionate about computer science education—rigorously preparing for the UGC NET JRF (Computer Science & Applications) and actively mentoring students in Data Structures, Algorithms, System Design, and Full-Stack Engineering.',
   ],
   resume: 'https://drive.google.com/file/d/19om4OGT9LOv5YrqcTWmNHxF7rEnUkMQ0/view',
   location: 'India',
@@ -32,8 +32,8 @@ export const about = {
   metrics: [
     { label: 'Current Role', value: 'SourceFuse Tech' },
     { label: 'GenAI & Agents', value: 'Mastra • Bedrock • MCP' },
-    { label: 'Alma Mater', value: 'NIT Jamshedpur (MCA)' },
-    { label: 'Core Stack', value: 'React • Fastify • Node • TS' },
+    { label: 'Academic & Teaching', value: 'UGC NET JRF Prep • NIT JSR' },
+    { label: 'Freelance & Open Source', value: 'Active Consultant & Builder' },
   ],
 };
 
@@ -51,6 +51,46 @@ export const experienceAndEducation = [
       'Enterprise Auth & Resilience: Built Google OAuth 2.0 + PKCE + Redis-backed refresh token rotation, fixed critical IDOR security vulnerabilities, and re-architected streaming into a fault-tolerant polling system.',
       'Rakuten Group Migration (Feb - Mar 2026): Migrated enterprise vendor platform from Angular 13 to Angular 19, resolving Material CSS component inconsistencies and ensuring cross-browser stability.',
       'Fleet Management Ltd (Aug 2025 - Jan 2026): Developed Single-SPA micro-frontend for QHSE document management (Pdf-lib, CKEditor) and interactive D3.js/Highcharts vessel & POD managers.',
+    ],
+  },
+  {
+    type: 'work',
+    title: 'Freelance Engineering & Technical Consulting',
+    subtitle: 'Full Stack & Generative AI Consultant',
+    period: '2024 - Present',
+    description:
+      'Providing end-to-end software architecture, MVP development, AI integrations, and performance engineering for startups and global clients.',
+    highlights: [
+      'Delivered custom client platforms including LegisForum (full-stack legal query management portal with custom intake workflows).',
+      'Consulting on Model Context Protocol (MCP) tool integrations, pgvector RAG pipelines, and multi-agent workflow automation.',
+      'Executing legacy framework migrations (Angular 12-14 to 19, AngularJS to React) and UI/UX performance refactoring.',
+      'Designing cost-effective, high-throughput backend architectures using Fastify, Node.js, Redis caching, and PostgreSQL.',
+    ],
+  },
+  {
+    type: 'education',
+    title: 'Computer Science Educator & Technical Mentor',
+    subtitle: 'UGC NET JRF Aspirant (Computer Science & Applications)',
+    period: '2023 - Present',
+    description:
+      'Actively preparing for the UGC NET JRF examination while mentoring students in Data Structures & Algorithms, Core Computer Science, and Full-Stack Engineering.',
+    highlights: [
+      'UGC NET JRF Aspirant (Subject Code 87): Comprehensive theoretical mastery across Discrete Mathematics, DBMS, OS, Computer Networks, and Theory of Computation.',
+      'Designed and delivered a Git/GitHub-based assignment submission and code-review curriculum (Teaching Repository) for mentee students.',
+      'Conducted 1-on-1 and cohort mentorship sessions on algorithmic problem solving (C++, LeetCode, Codeforces) and placement preparation.',
+    ],
+  },
+  {
+    type: 'work',
+    title: 'Open Source Creator & Contributor',
+    subtitle: 'Active Community Developer',
+    period: 'Ongoing',
+    description:
+      'Publishing and maintaining open-source developer tooling, AI integrations, and security patches in public.',
+    highlights: [
+      'Extended Model Context Protocol (MCP) server tooling with RESTful resource mutation operations.',
+      'Created ChitChat AI (Google Gemini streaming assistant) and API Proxy Server (Redis caching & rate limiting).',
+      'Proactively remediating security CVEs (Trivy) and contributing to modern developer ecosystems.',
     ],
   },
   {
@@ -76,19 +116,6 @@ export const experienceAndEducation = [
     highlights: [
       'Built early foundations in web development, database modeling, and software architectures.',
       'Graduated with distinction in core computing subjects.',
-    ],
-  },
-  {
-    type: 'work',
-    title: 'Open Source & Full Stack Development',
-    subtitle: 'Software Creator & Contributor',
-    period: '2023 - 2024',
-    description:
-      'Engineered and published full-stack applications, AI tools, and system utilities with community recognition.',
-    highlights: [
-      'Engineered ChitChat AI utilizing Google Gemini API with real-time stream handling and conversational memory.',
-      'Developed API Proxy Server featuring token-bucket rate limiting and Redis response caching.',
-      'Delivered LegisForum freelance portal for case management and client intake.',
     ],
   },
 ];
@@ -258,5 +285,5 @@ export const contact = {
   linkedin: 'https://www.linkedin.com/in/vinaygupta-nitjsr/',
   github: 'https://github.com/vinaytheprogrammer',
   location: 'India',
-  availability: 'Open for full-time Software Engineering roles, Generative AI engineering, and high-impact distributed systems collaborations.',
+  availability: 'Available for Full-time roles, Freelance projects (GenAI & Full Stack), Open Source collaborations, and 1-on-1 Teaching / Mentorship sessions.',
 };
