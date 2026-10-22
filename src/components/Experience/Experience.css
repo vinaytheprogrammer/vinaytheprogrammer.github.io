@@ -10,7 +10,7 @@
   bottom: 0;
   left: 24px;
   width: 2px;
-  background: linear-gradient(180deg, var(--accent-primary) 0%, rgba(99, 102, 241, 0.1) 100%);
+  background: linear-gradient(180deg, var(--accent-primary) 0%, rgba(59, 130, 246, 0.05) 100%);
 }
 
 .timeline-items {
@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.25);
 }
 
 .timeline-content {

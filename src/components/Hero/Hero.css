@@ -121,7 +121,7 @@
   border-color: var(--border-focus);
   color: var(--accent-primary);
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
 }
 
 /* Metrics Bar */

@@ -1,33 +1,33 @@
 /* Design System & Global Styles */
 :root {
-  /* Dark Mode (Default) Tokens */
-  --bg-primary: #090d16;
-  --bg-secondary: #0f172a;
-  --bg-card: rgba(17, 24, 39, 0.75);
-  --bg-card-hover: rgba(30, 41, 59, 0.85);
-  --bg-glass: rgba(15, 23, 42, 0.65);
+  /* Dark Mode (Default) Tokens - Executive Obsidian & Electric Azure */
+  --bg-primary: #0a0c12;
+  --bg-secondary: #0f131a;
+  --bg-card: rgba(17, 22, 31, 0.75);
+  --bg-card-hover: rgba(24, 31, 44, 0.88);
+  --bg-glass: rgba(10, 12, 18, 0.85);
   
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
   
-  --accent-primary: #6366f1;
-  --accent-secondary: #a855f7;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #2563eb;
   --accent-cyan: #06b6d4;
   --accent-emerald: #10b981;
   
-  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
-  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  --gradient-primary: linear-gradient(135deg, #38bdf8 0%, #3b82f6 50%, #6366f1 100%);
+  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.14) 0%, transparent 70%);
   --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
   
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-focus: rgba(99, 102, 241, 0.5);
-  --border-highlight: rgba(168, 85, 247, 0.3);
+  --border-focus: rgba(59, 130, 246, 0.5);
+  --border-highlight: rgba(56, 189, 248, 0.35);
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.25);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 40px -15px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.22);
   
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -42,33 +42,33 @@
 }
 
 [data-theme='light'] {
-  --bg-primary: #f8fafc;
-  --bg-secondary: #f1f5f9;
-  --bg-card: rgba(255, 255, 255, 0.85);
-  --bg-card-hover: rgba(255, 255, 255, 0.98);
-  --bg-glass: rgba(255, 255, 255, 0.75);
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-card-hover: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.88);
   
   --text-primary: #0f172a;
-  --text-secondary: #475569;
+  --text-secondary: #334155;
   --text-muted: #64748b;
   
-  --accent-primary: #4f46e5;
-  --accent-secondary: #9333ea;
+  --accent-primary: #2563eb;
+  --accent-secondary: #1d4ed8;
   --accent-cyan: #0284c7;
   --accent-emerald: #059669;
   
-  --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #db2777 100%);
-  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.1) 0%, transparent 70%);
-  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.8) 0%, rgba(241, 245, 249, 0.6) 100%);
+  --gradient-primary: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #4f46e5 100%);
+  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.7) 100%);
   
   --border-subtle: rgba(15, 23, 42, 0.08);
-  --border-focus: rgba(79, 70, 229, 0.5);
-  --border-highlight: rgba(147, 51, 234, 0.2);
+  --border-focus: rgba(37, 99, 235, 0.5);
+  --border-highlight: rgba(2, 132, 199, 0.3);
   
   --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
   --shadow-md: 0 10px 25px rgba(15, 23, 42, 0.08);
   --shadow-lg: 0 20px 35px -10px rgba(15, 23, 42, 0.12);
-  --shadow-glow: 0 0 30px rgba(79, 70, 229, 0.15);
+  --shadow-glow: 0 0 30px rgba(37, 99, 235, 0.15);
 }
 
 *, *::before, *::after {
@@ -168,9 +168,9 @@ img {
   gap: 0.5rem;
   padding: 0.35rem 0.9rem;
   border-radius: var(--radius-full);
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(59, 130, 246, 0.08);
   color: var(--accent-primary);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.22);
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -234,12 +234,12 @@ img {
 .btn-primary {
   background: var(--gradient-primary);
   color: #ffffff;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 6px 22px rgba(59, 130, 246, 0.45);
 }
 
 .btn-secondary {

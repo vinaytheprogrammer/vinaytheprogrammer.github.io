@@ -31,7 +31,7 @@
   background: var(--gradient-primary);
   color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .skills-grid {
@@ -72,17 +72,17 @@
 }
 
 .skill-level-badge.advanced {
-  background: rgba(16, 185, 129, 0.15);
+  background: rgba(16, 185, 129, 0.12);
   color: var(--accent-emerald);
 }
 
 .skill-level-badge.proficient {
-  background: rgba(99, 102, 241, 0.15);
+  background: rgba(59, 130, 246, 0.12);
   color: var(--accent-primary);
 }
 
 .skill-level-badge.intermediate {
-  background: rgba(6, 182, 212, 0.15);
+  background: rgba(6, 182, 212, 0.12);
   color: var(--accent-cyan);
 }
 
