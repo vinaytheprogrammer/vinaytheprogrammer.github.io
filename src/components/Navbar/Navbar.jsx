@@ -10,10 +10,24 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let isScrolledRef = false;
+    let ticking = false;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrolled = window.scrollY > 20;
+          if (scrolled !== isScrolledRef) {
+            isScrolledRef = scrolled;
+            setIsScrolled(scrolled);
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

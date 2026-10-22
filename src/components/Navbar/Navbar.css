@@ -4,16 +4,17 @@
   left: 0;
   right: 0;
   z-index: 100;
-  transition: all var(--transition-normal);
-  padding: 1.25rem 0;
+  padding: 1rem 0;
   background: transparent;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  transform: translateZ(0);
+  will-change: background-color, box-shadow;
 }
 
 .navbar-header.scrolled {
-  padding: 0.85rem 0;
   background: var(--bg-glass);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-sm);
 }
