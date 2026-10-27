@@ -31,8 +31,8 @@ export const freelancerData = {
 
   bio: [
     'I am an Independent Full Stack, Mobile & Generative AI Technical Consultant and NIT Jamshedpur (MCA) alumnus with over 2 years of enterprise engineering experience.',
-    'I partner with ambitious founders, business owners, and engineering teams to turn ideas into scalable web applications, deploy autonomous multi-agent AI systems, build cross-platform mobile apps using React Native & Expo, and execute complex framework migrations without production downtime.',
-    'My portfolio spans diverse industries and technical challenges—from architecting end-to-end 3-in-1 food delivery mobile platforms (OyeKake) and legal tech intake systems (LegisForum) to maritime micro-frontend analytics (Fleet Management Ltd) and enterprise vendor portal modernization (Rakuten Group).',
+    'I partner with ambitious founders, business owners, and engineering teams to turn ideas into scalable web applications, deploy autonomous multi-agent AI systems, build cross-platform mobile apps using React Native & Expo, and engineer high-throughput backend services.',
+    'My freelance consulting portfolio spans diverse technical challenges—from architecting end-to-end 3-in-1 food delivery mobile platforms (OyeKake) and bespoke legal intake portals (LegisForum) to autonomous AI agents (Mastra & MCP) and full-stack healthcare platforms.',
     'Whether you need a full-stack MVP delivered in 3 weeks, custom AI agents connected to your database via pgvector & MCP, an Expo Android app deployed to Google Play, or an experienced engineer to unblock critical technical debt, I provide transparent communication, weekly demo builds, and clean code you can scale.',
   ],
 
@@ -81,15 +81,15 @@ export const freelancerData = {
     },
     {
       id: 'migrations',
-      title: 'Enterprise Framework Migrations & Modernization',
-      badge: 'Specialized',
+      title: 'Codebase Modernization & Framework Refactoring',
+      badge: 'Code Quality',
       description:
-        'Upgrade legacy codebases to modern LTS versions with zero business interruption, resolving breaking changes and security vulnerabilities.',
+        'Modernize existing codebases, refactor outdated dependencies, and optimize performance and security without breaking production flows.',
       deliverables: [
-        'Angular upgrades (Angular 12–14 to Angular 19 LTS) with zero workflow regression',
-        'Legacy AngularJS / jQuery migrations to modern React 18 or Vite',
-        'Material UI / CSS refactoring and responsive design restoration',
-        'Trivy & SonarQube vulnerability remediation and dependency auditing',
+        'Upgrading legacy React / Node.js applications to modern Vite and TypeScript',
+        'UI component refactoring, Tailwind CSS modernization, and responsive optimization',
+        'Security vulnerability remediation (Trivy CVEs, OWASP Top 10 hardening)',
+        'Database query optimization, indexing, and connection pool tuning',
         'Code modularization and test coverage improvements',
       ],
     },
@@ -147,38 +147,6 @@ export const freelancerData = {
       stack: ['React 18', 'Node.js', 'Express', 'PostgreSQL', 'Tailwind CSS', 'JWT'],
     },
     {
-      title: 'Fleet Management Ltd — Maritime Micro-Frontend & Analytics',
-      category: 'Enterprise Micro-Frontend',
-      badge: 'Maritime SaaS',
-      client: 'Fleet Management Ltd',
-      summary:
-        'Engineered a Single-SPA micro-frontend application for maritime QHSE compliance documents, featuring in-browser PDF rendering and interactive D3.js/Highcharts vessel tracking.',
-      impact:
-        'Eliminated external PDF viewer dependencies for thousands of shipboard officers and enabled real-time port-of-discharge tracking across global fleets.',
-      highlights: [
-        'Single-SPA micro-frontend integration adhering to strict enterprise security gates.',
-        'In-browser PDF/image rendering engine using pdfjs-dist and Pdf-lib with automated email dispatch.',
-        'Interactive Highcharts and D3.js visualization POCs for real-time vessel monitoring.',
-      ],
-      stack: ['React.js', 'Single-SPA', 'Highcharts', 'D3.js', 'Pdf-lib', 'REST APIs'],
-    },
-    {
-      title: 'Rakuten Group — Enterprise Angular 13 → 19 Migration',
-      category: 'Enterprise Modernization',
-      badge: 'Framework Migration',
-      client: 'Rakuten Group, Inc.',
-      summary:
-        'Spearheaded the complete version upgrade of Rakuten’s vendor management portal from Angular 13 to Angular 19, resolving breaking Material CSS component changes.',
-      impact:
-        'Zero regressions in critical vendor purchasing flows; reduced bundle size and eliminated deprecated dependencies.',
-      highlights: [
-        'Refactored legacy Material CSS components to comply with Angular 19 design tokens.',
-        'Maintained 100% feature parity and cross-browser consistency across all modules.',
-        'Executed thorough QA test walkthroughs and edge-case regression validation.',
-      ],
-      stack: ['Angular 19', 'Angular 13', 'TypeScript', 'Material CSS', 'Claude Code'],
-    },
-    {
       title: 'Custom GenAI Agents & Model Context Protocol (MCP)',
       category: 'Generative AI & LLMs',
       badge: 'AI Automation',
@@ -193,6 +161,24 @@ export const freelancerData = {
         'Engineered token-budget management layers to prevent context overflow in long-running agent loops.',
       ],
       stack: ['Mastra', 'AWS Bedrock', 'pgvector', 'MCP', 'Fastify', 'Zod', 'LangSmith'],
+    },
+    {
+      title: 'Dispensary Management System',
+      category: 'Full Stack Web Platform',
+      badge: 'Healthcare & Inventory',
+      client: 'Healthcare Operations',
+      summary:
+        'Full-stack medical dispensary and inventory management web application with campus ID validation, patient medical history tracking, and automated stock alerts.',
+      impact:
+        'Streamlined medication dispensing and automated low-stock replenishment warnings with comprehensive historical audit logs.',
+      highlights: [
+        'Role-based access control and patient authentication workflow using JWT and Express.',
+        'Automated inventory replenishment tracking and historical medical event auditing.',
+        'Responsive React interface with dynamic search and reporting filters.',
+      ],
+      stack: ['React.js', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
+      pocUrl: 'https://github.com/vinaytheprogrammer/Dispensary_management_sys',
+      quoteUrl: 'https://dispensary-management-sys.vercel.app/',
     },
   ],
 
@@ -250,7 +236,7 @@ export const freelancerData = {
         'Dedicated hours per week or sprint',
         'Direct Slack / Discord / WhatsApp communication',
         'Daily or bi-weekly syncs & code reviews',
-        'Framework migrations, bug fixes & feature velocity',
+        'Codebase refactoring, bug fixes & feature velocity',
         'Roll over unused sprint hours',
       ],
     },
@@ -293,7 +279,7 @@ export const freelancerData = {
     {
       question: 'Can you work with our existing codebase or legacy systems?',
       answer:
-        'Absolutely. Having led complex migrations (such as upgrading enterprise portals from Angular 13 to 19 and integrating micro-frontends), I am very comfortable auditing, refactoring, and modernizing existing codebases.',
+        'Absolutely. I am very comfortable auditing, refactoring, and modernizing existing codebases, resolving technical debt, improving query performance, and updating frameworks.',
     },
     {
       question: 'What happens if there are bugs after delivery?',

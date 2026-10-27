@@ -14,7 +14,7 @@ const FreelancerCaseStudies = () => {
             Diverse Projects, <span className="text-gradient freelance-gradient">Proven Delivery</span>
           </h2>
           <p className="section-subtitle">
-            A track record spanning food delivery mobile apps (React Native Expo), legal tech MVPs, maritime micro-frontends, and autonomous AI systems.
+            A track record spanning food delivery mobile apps (React Native Expo), bespoke legal tech platforms, healthcare management systems, and autonomous AI agents.
           </p>
         </div>
 
