@@ -17,6 +17,7 @@ export const tutorData = {
   navLinks: [
     { name: 'About Teaching', href: '#about' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Curriculum', href: '#curriculum' },
     { name: 'Methodology', href: '#methodology' },
     { name: 'FAQ', href: '#faq' },
@@ -25,14 +26,15 @@ export const tutorData = {
 
   metrics: [
     { label: 'Industry Experience', value: '2+ Years Production SWE' },
+    { label: 'National Ranks', value: 'AIR 5 JMI • AIR 266 NIMCET' },
     { label: 'Startup Teaching', value: 'Codingbits (Trainer)' },
-    { label: 'Mock Interviews', value: 'Junior Placement Coaching' },
     { label: 'Academic Standing', value: 'NIT Jamshedpur MCA' },
   ],
 
   bio: [
     'I am a Computer Science Educator, Technical Mentor, and active Software Engineer with 2+ years of industry experience building enterprise platforms, mobile applications, and Generative AI systems.',
     'I hold a Master of Computer Applications (MCA) from NIT Jamshedpur and am actively preparing for the UGC NET JRF Examination in Computer Science & Applications (Subject Code 87)—bringing both theoretical rigor and enterprise execution to my teaching.',
+    'A competitive entrance veteran with proven exam-cracking discipline, I achieved All India Rank 5 (AIR 5) in JMI-Jamia Millia Islamia MCA, All India Rank 266 (AIR 266) in NIMCET (qualifying for NIT Jamshedpur), Percentile 99.872 in TANCET, and was recognized as District Topper at BPS-KCNIT.',
     'As an educator at Codingbits (an EdTech startup) and through personal 1-on-1 mentorship, I have conducted extensive mock technical interviews for collegiate juniors, guiding them to sharpen their algorithmic communication, pass stringent campus placement rounds, and build production-grade portfolios.',
     'I am deeply passionate about open source and actively teach students how to break into open source, understand large unfamiliar codebases, master collaborative Git workflows (branches, rebasing, Pull Requests), and work with distributed teams to gain real-world industry exposure before graduating.',
   ],
@@ -99,6 +101,61 @@ export const tutorData = {
         'Mastery across Discrete Mathematics, Theory of Computation (Automata & Formal Languages), Compiler Design, Advanced DBMS, and Distributed Systems.',
         'Ability to break down complex mathematical proofs, asymptotic notation, and abstract computer science concepts into clear, intuitive mental models.',
       ],
+    },
+  ],
+
+  achievements: [
+    {
+      id: 'jmi-jamia',
+      title: 'JMI-Jamia',
+      subtitle: 'Jamia Millia Islamia Central University',
+      score: 'AIR 5',
+      scoreType: 'All India Rank',
+      date: 'Jun 2022',
+      association: 'Associated with Aspire Study',
+      badge: 'National Rank 5',
+      category: 'National Central University Entrance',
+      description:
+        'Secured All India Rank 5 (AIR 5) in the highly competitive Jamia Millia Islamia MCA entrance examination, ranking among the top 5 candidates nationwide.',
+    },
+    {
+      id: 'nimcet',
+      title: 'NIMCET',
+      subtitle: 'National Institutes of Technology MCA Common Entrance Test',
+      score: 'AIR 266',
+      scoreType: 'All India Rank',
+      date: 'Jun 2022',
+      association: 'Associated with National Institute of Technology Jamshedpur',
+      badge: 'NIT Jamshedpur Admission',
+      category: 'National Premier NIT Entrance',
+      description:
+        'Achieved All India Rank 266 (AIR 266) in the premier national NIT MCA entrance examination, qualifying for admission into the National Institute of Technology (NIT) Jamshedpur.',
+    },
+    {
+      id: 'tancet',
+      title: 'TANCET',
+      subtitle: 'Tamil Nadu Common Entrance Test',
+      score: 'Percentile 99.872',
+      scoreType: 'State Percentile',
+      date: 'May 2022',
+      association: 'Associated with Aspire Study',
+      badge: 'Top 0.13% Statewide',
+      category: 'State Competitive Entrance Examination',
+      description:
+        'Scored in the 99.872 percentile (top 0.13% of all test-takers) in the Tamil Nadu Common Entrance Test for postgraduate computer applications programs.',
+    },
+    {
+      id: 'bps-kcnit',
+      title: 'BPS - KCNIT',
+      subtitle: 'Academic Board Examination',
+      score: 'District Topper',
+      scoreType: 'Academic Distinction',
+      date: 'Feb 2017',
+      association: 'Associated with BPS - KCNIT',
+      badge: 'Rank 1 in District',
+      category: 'Foundational Academic Honors',
+      description:
+        'Awarded District Topper distinction for exceptional academic performance and achieving Rank 1 across the district.',
     },
   ],
 

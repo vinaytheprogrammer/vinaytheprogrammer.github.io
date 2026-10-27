@@ -1,6 +1,7 @@
 import React from 'react';
 import TutorHero from '../components/Tutor/TutorHero';
 import TutorExperience from '../components/Tutor/TutorExperience';
+import TutorAchievements from '../components/Tutor/TutorAchievements';
 import TutorCurriculum from '../components/Tutor/TutorCurriculum';
 import { TutorMethodology, TutorFaq } from '../components/Tutor/TutorMethodology';
 import Contact from '../components/Contact/Contact';
@@ -11,6 +12,7 @@ const TutorView = () => {
     <div className="tutor-view">
       <TutorHero />
       <TutorExperience />
+      <TutorAchievements />
       <TutorCurriculum />
       <TutorMethodology />
       <TutorFaq />
