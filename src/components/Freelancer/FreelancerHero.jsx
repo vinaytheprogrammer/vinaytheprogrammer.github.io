@@ -10,11 +10,18 @@ const FreelancerHero = () => {
     <section id="top" className="freelancer-hero-section">
       <div className="container freelancer-hero-container">
         
-        {/* Availability Badge */}
+        {/* Availability Badge & Live Visitor Counter */}
         <div className="hero-badge-wrapper animate-fade-in">
           <div className="hero-status-badge freelance-badge">
             <span className="status-dot purple"></span>
             <span>{freelancerData.badge}</span>
+          </div>
+          <div className="hero-counter-badge" title="Freelance Page Visits">
+            <img
+              src="https://komarev.com/ghpvc/?username=vinaytheprogrammer-portfolio-freelancer&label=Freelance+Visits&color=8b5cf6&style=flat-square"
+              alt="Freelance Page Visits"
+              height="26"
+            />
           </div>
         </div>
 

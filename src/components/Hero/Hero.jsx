@@ -10,11 +10,18 @@ const Hero = () => {
     <section id="top" className="hero-section">
       <div className="container hero-container">
         
-        {/* Availability Badge */}
+        {/* Availability Badge & Live Visitor Counter */}
         <div className="hero-badge-wrapper animate-fade-in">
           <div className="hero-status-badge">
             <span className="status-dot"></span>
             <span>{sweData.badge}</span>
+          </div>
+          <div className="hero-counter-badge" title="SWE Page Visits">
+            <img
+              src="https://komarev.com/ghpvc/?username=vinaytheprogrammer-portfolio-swe&label=SWE+Page+Visits&color=2563eb&style=flat-square"
+              alt="SWE Page Visits"
+              height="26"
+            />
           </div>
         </div>
 

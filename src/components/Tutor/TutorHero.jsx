@@ -10,11 +10,18 @@ const TutorHero = () => {
     <section id="top" className="tutor-hero-section">
       <div className="container tutor-hero-container">
         
-        {/* Availability Badge */}
+        {/* Availability Badge & Live Visitor Counter */}
         <div className="hero-badge-wrapper animate-fade-in">
           <div className="hero-status-badge tutor-badge">
             <span className="status-dot green"></span>
             <span>{tutorData.badge}</span>
+          </div>
+          <div className="hero-counter-badge" title="Tutor Page Visits">
+            <img
+              src="https://komarev.com/ghpvc/?username=vinaytheprogrammer-portfolio-tutor&label=Tutor+Page+Visits&color=10b981&style=flat-square"
+              alt="Tutor Page Visits"
+              height="26"
+            />
           </div>
         </div>
 
