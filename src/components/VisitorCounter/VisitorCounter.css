@@ -12,11 +12,11 @@
 .visitor-dock-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
-  padding: 0.35rem 0.55rem 0.35rem 0.85rem;
+  gap: 0.75rem;
+  padding: 0.38rem 0.65rem 0.38rem 0.95rem;
   background: var(--bg-card);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.04);
@@ -30,11 +30,11 @@
 }
 
 .visitor-pulse-dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: var(--accent-emerald);
-  box-shadow: 0 0 8px var(--accent-emerald);
+  box-shadow: 0 0 10px var(--accent-emerald);
   flex-shrink: 0;
   animation: pulseEmerald 2s infinite ease-in-out;
 }
@@ -43,7 +43,7 @@
   0%, 100% {
     opacity: 1;
     transform: scale(1);
-    box-shadow: 0 0 8px var(--accent-emerald);
+    box-shadow: 0 0 10px var(--accent-emerald);
   }
   50% {
     opacity: 0.45;
@@ -53,79 +53,43 @@
 }
 
 .visitor-dock-label {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--text-secondary);
   white-space: nowrap;
 }
 
-.visitor-dock-count-mask {
+/* Polished count badge with proper background matching and generous padding to ensure zero clipping */
+.visitor-dock-badge {
   display: inline-flex;
   align-items: center;
-  height: 20px;
-  overflow: hidden;
-  border-radius: 4px;
+  justify-content: center;
+  height: 22px;
+  min-width: 30px;
+  padding: 0 7px;
   background: #2563eb;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
 }
 
-.visitor-dock-count-mask img {
+.visitor-dock-badge img {
   height: 20px;
   margin-left: -10px;
   display: block;
 }
 
-.visitor-dock-close-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  cursor: pointer;
-  padding: 0;
-  margin-left: -0.15rem;
-  transition: all var(--transition-fast);
+/* Light mode support */
+[data-theme='light'] .visitor-dock-pill {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.visitor-dock-close-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
-}
-
-/* Minimized Floating Dot Button */
-.visitor-dock-minimized-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: var(--bg-card);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid var(--border-subtle);
+[data-theme='light'] .visitor-dock-label {
   color: var(--text-secondary);
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
-  transition: all var(--transition-fast);
-}
-
-.visitor-dock-minimized-btn:hover {
-  transform: translateY(-2px) scale(1.05);
-  border-color: var(--border-highlight);
-  color: var(--accent-primary);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
-}
-
-.visitor-dock-icon {
-  flex-shrink: 0;
 }
 
 /* Responsive adjustments */
@@ -136,11 +100,22 @@
   }
 
   .visitor-dock-pill {
-    gap: 0.5rem;
-    padding: 0.3rem 0.5rem 0.3rem 0.7rem;
+    gap: 0.55rem;
+    padding: 0.3rem 0.55rem 0.3rem 0.8rem;
   }
 
   .visitor-dock-label {
-    font-size: 0.74rem;
+    font-size: 0.76rem;
+  }
+
+  .visitor-dock-badge {
+    height: 20px;
+    min-width: 26px;
+    padding: 0 5px;
+  }
+
+  .visitor-dock-badge img {
+    height: 18px;
+    margin-left: -9px;
   }
 }
