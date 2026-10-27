@@ -38,24 +38,56 @@ export const sweData = {
 
   pillars: [
     {
+      id: 'genai',
+      badge: 'Multi-Agent LLMs',
       title: 'Generative AI & Multi-Agent Systems',
       description:
-        'Architecting parallel multi-agent LLM systems using Mastra and AWS Bedrock AgentCore, coordinating control-plane, critic, and document-generation agents with human-in-the-loop gatekeepers and Zod structured outputs.',
+        'Architecting production multi-agent LLM systems with Mastra and AWS Bedrock AgentCore, coordinating control-plane, critic, and document-generator agents with human-in-the-loop gatekeepers.',
+      capabilities: [
+        'Parallel multi-agent execution with Mastra & Bedrock AgentCore',
+        'pgvector RAG pipeline with semantic re-ranking & PII sanitization',
+        'Context token budgeting, prompt caching & Zod structured schemas',
+      ],
+      tech: ['Mastra', 'AWS Bedrock', 'pgvector', 'MCP', 'LangSmith', 'Zod'],
     },
     {
+      id: 'backend',
+      badge: 'Distributed Systems',
       title: 'Enterprise Backend & Microservices',
       description:
-        'Designing high-throughput APIs, fault-tolerant polling architectures, and microservices using Fastify, Node.js, Express, LoopBack 4, Prisma, PostgreSQL, and Redis caching.',
+        'Designing high-throughput APIs, fault-tolerant polling architectures, and microservices engineered for low latency, security, and high reliability.',
+      capabilities: [
+        'High-concurrency services using Fastify, Node.js, and Express',
+        'Cache-aside architecture & token-bucket rate limiting via Redis',
+        'PostgreSQL & MongoDB schema modeling with Prisma & LoopBack 4',
+      ],
+      tech: ['Fastify', 'Node.js', 'PostgreSQL', 'Redis', 'Prisma', 'REST APIs'],
     },
     {
+      id: 'frontend',
+      badge: 'Scalable UI',
       title: 'Frontend & Micro-Frontends',
       description:
-        'Building modular Single-SPA micro-frontends and SPAs with React 18, enterprise Angular 19 upgrades, Material CSS refactoring, and interactive D3.js / Highcharts analytics.',
+        'Engineering modular Single-SPA micro-frontend architectures, executing large-scale enterprise framework upgrades, and crafting interactive data dashboards.',
+      capabilities: [
+        'Single-SPA micro-frontends with in-browser PDF/image rendering',
+        'Zero-regression framework migrations: Angular 13 → 19 LTS',
+        'Interactive analytics dashboards using D3.js and Highcharts',
+      ],
+      tech: ['React 18', 'Angular 19', 'Single-SPA', 'TypeScript', 'Highcharts', 'Tailwind'],
     },
     {
+      id: 'security',
+      badge: 'Zero-Trust Security',
       title: 'Enterprise Security & Hardening',
       description:
-        'Implementing Google OAuth 2.0 with PKCE, JWT with Redis-backed refresh token rotation, IDOR mitigation across multi-tenant routes, and Trivy CVE vulnerability remediation.',
+        'Implementing bulletproof authentication layers, eliminating multi-tenant authorization flaws, and proactively remediating security vulnerabilities.',
+      capabilities: [
+        'Google OAuth 2.0 + PKCE with Redis refresh token rotation',
+        'IDOR vulnerability elimination across multi-tenant API routes',
+        'Trivy CVE remediation and SonarQube code quality enforcement',
+      ],
+      tech: ['OAuth 2.0', 'PKCE', 'JWT Rotation', 'RBAC', 'Trivy', 'SonarQube'],
     },
   ],
 

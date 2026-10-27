@@ -1,97 +1,304 @@
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 2rem;
-  align-items: stretch;
+/* About & Engineering Pillars Styling */
+.about-section {
+  position: relative;
 }
 
-.about-bio-card {
-  padding: 2.5rem;
+/* Bio Showcase Card */
+.about-bio-showcase {
+  padding: 2.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(17, 22, 31, 0.85) 0%, rgba(10, 12, 18, 0.95) 100%);
+}
+
+[data-theme='light'] .about-bio-showcase {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+}
+
+.bio-main-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1.25rem;
 }
 
-.about-bio-title {
-  font-size: 1.55rem;
-  margin-bottom: 1.5rem;
+.bio-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
+}
+
+.bio-headline {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  color: var(--text-primary);
+  line-height: 1.35;
   letter-spacing: -0.01em;
 }
 
-.about-bio-text {
+.bio-paragraphs {
   display: flex;
   flex-direction: column;
   gap: 1.15rem;
   color: var(--text-secondary);
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
-.about-quote {
-  margin-top: 2rem;
+.bio-paragraphs p {
+  margin: 0;
+}
+
+.bio-quote-box {
+  margin-top: 1rem;
   padding: 1.25rem 1.5rem;
   border-radius: var(--radius-md);
-  background: rgba(59, 130, 246, 0.06);
+  background: rgba(59, 130, 246, 0.07);
   border-left: 3px solid var(--accent-primary);
   display: flex;
   align-items: flex-start;
   gap: 0.85rem;
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   font-style: italic;
   color: var(--text-primary);
+  line-height: 1.6;
 }
 
 .quote-icon {
   color: var(--accent-primary);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
-.about-strengths-grid {
+/* Pillars Section Header */
+.pillars-section-header {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.pillars-main-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.pillars-main-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* 4 Pillars 2x2 Grid */
+.pillars-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
 }
 
-.strength-card {
-  padding: 1.5rem;
+.pillar-card {
+  padding: 2.25rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  background: var(--bg-card);
 }
 
-.strength-icon-wrapper {
+.pillar-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-focus);
+  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.5), var(--shadow-glow);
+}
+
+[data-theme='light'] .pillar-card:hover {
+  box-shadow: 0 16px 32px -12px rgba(37, 99, 235, 0.15);
+}
+
+.pillar-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.pillar-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-md);
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(59, 130, 246, 0.12);
   color: var(--accent-primary);
-  margin-bottom: 0.25rem;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  transition: transform var(--transition-fast);
 }
 
-.strength-title {
-  font-size: 1.15rem;
+.pillar-card:hover .pillar-icon-wrapper {
+  transform: scale(1.05);
+}
+
+/* Pillar Specific Accents */
+.pillar-genai .pillar-icon-wrapper {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.pillar-backend .pillar-icon-wrapper {
+  background: rgba(59, 130, 246, 0.12);
+  color: #3b82f6;
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.pillar-frontend .pillar-icon-wrapper {
+  background: rgba(139, 92, 246, 0.12);
+  color: #a78bfa;
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.pillar-security .pillar-icon-wrapper {
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.pillar-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.pillar-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.pillar-description {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+/* Capabilities Checklist */
+.pillar-capabilities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.pillar-capabilities li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.885rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.capability-check-icon {
+  color: var(--accent-primary);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.pillar-genai .capability-check-icon {
+  color: #38bdf8;
+}
+
+.pillar-frontend .capability-check-icon {
+  color: #a78bfa;
+}
+
+.pillar-security .capability-check-icon {
+  color: #10b981;
+}
+
+/* Tech Tags Row */
+.pillar-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.pillar-tech-pill {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.pillar-card:hover .pillar-tech-pill {
+  border-color: rgba(255, 255, 255, 0.12);
   color: var(--text-primary);
 }
 
-.strength-description {
-  color: var(--text-muted);
-  font-size: 0.92rem;
-  line-height: 1.55;
+[data-theme='light'] .pillar-tech-pill {
+  background: rgba(15, 23, 42, 0.04);
+  border-color: rgba(15, 23, 42, 0.08);
 }
 
-@media (max-width: 900px) {
-  .about-grid {
+/* Responsive Breakpoints */
+@media (max-width: 960px) {
+  .pillars-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-bio-showcase {
+    padding: 2rem;
+  }
+
+  .bio-headline {
+    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 600px) {
-  .about-bio-card {
-    padding: 1.75rem;
+  .about-bio-showcase {
+    padding: 1.5rem;
+  }
+
+  .pillar-card {
+    padding: 1.65rem;
+  }
+
+  .pillar-title {
+    font-size: 1.2rem;
   }
 }
