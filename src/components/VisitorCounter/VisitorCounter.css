@@ -12,8 +12,8 @@
 .visitor-dock-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.38rem 0.65rem 0.38rem 0.95rem;
+  gap: 0.65rem;
+  padding: 0.42rem 0.95rem;
   background: var(--bg-card);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -26,7 +26,7 @@
 .visitor-dock-pill:hover {
   transform: translateY(-2px);
   border-color: var(--border-highlight);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25), 0 0 15px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 8px 25px rgba(6, 182, 212, 0.2), 0 0 15px rgba(59, 130, 246, 0.15);
 }
 
 .visitor-pulse-dot {
@@ -60,25 +60,34 @@
   white-space: nowrap;
 }
 
-/* Polished count badge with proper background matching and generous padding to ensure zero clipping */
-.visitor-dock-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 22px;
-  min-width: 30px;
-  padding: 0 7px;
-  background: #2563eb;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  flex-shrink: 0;
+.visitor-dock-sep {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  opacity: 0.6;
+  user-select: none;
 }
 
-.visitor-dock-badge img {
-  height: 20px;
-  margin-left: -10px;
-  display: block;
+/* Native, glowing monospace visitor count without any boxes or rectangles */
+.visitor-dock-value {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--accent-cyan);
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.45);
+  white-space: nowrap;
+  min-width: 14px;
+  text-align: right;
+  transition: color var(--transition-fast);
+}
+
+/* Hidden tracking pixel */
+.visitor-sync-pixel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Light mode support */
@@ -92,6 +101,11 @@
   color: var(--text-secondary);
 }
 
+[data-theme='light'] .visitor-dock-value {
+  color: var(--accent-primary);
+  text-shadow: none;
+}
+
 /* Responsive adjustments */
 @media (max-width: 640px) {
   .visitor-counter-dock {
@@ -100,22 +114,15 @@
   }
 
   .visitor-dock-pill {
-    gap: 0.55rem;
-    padding: 0.3rem 0.55rem 0.3rem 0.8rem;
+    gap: 0.5rem;
+    padding: 0.35rem 0.8rem;
   }
 
   .visitor-dock-label {
     font-size: 0.76rem;
   }
 
-  .visitor-dock-badge {
-    height: 20px;
-    min-width: 26px;
-    padding: 0 5px;
-  }
-
-  .visitor-dock-badge img {
-    height: 18px;
-    margin-left: -9px;
+  .visitor-dock-value {
+    font-size: 0.82rem;
   }
 }
