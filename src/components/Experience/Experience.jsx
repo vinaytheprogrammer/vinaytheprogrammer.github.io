@@ -13,7 +13,7 @@ const Experience = () => {
             Engineering & <span className="text-gradient">Experience</span>
           </h2>
           <p className="section-subtitle">
-            Enterprise software engineering at SourceFuse, Rakuten Group, Fleet Management, and NIT Jamshedpur credentials.
+            Enterprise software engineering at SourceFuse Technologies (Fleet Management & Rakuten Group client engagements) and NIT Jamshedpur credentials.
           </p>
         </div>
 

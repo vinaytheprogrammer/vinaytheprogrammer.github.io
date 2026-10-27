@@ -18,7 +18,7 @@ export const about = {
   bio: [
     'I am a Full Stack and Generative AI Developer at SourceFuse Technologies, an active Open Source Contributor, Freelance Consultant, and an alumnus of NIT Jamshedpur (MCA 2025).',
     'Specialized in Generative AI engineering—designing production-grade multi-agent LLM systems (Mastra, AWS Bedrock AgentCore), RAG pipelines with pgvector, and Model Context Protocol (MCP) integrations for enterprise SaaS platforms.',
-    'On the client & freelance front, I help founders and businesses build high-performance full-stack MVPs, integrate custom AI agents, execute complex framework migrations (Angular 13 to 19), and build scalable microservices using Fastify, Node.js, Express, React 18, and PostgreSQL.',
+    'On the client & freelance front, I help founders and businesses build high-performance full-stack MVPs, cross-platform Expo mobile apps, integrate custom AI agents, and build scalable microservices using Fastify, Node.js, Express, React 18, and PostgreSQL.',
     'Passionate about computer science education—rigorously preparing for the UGC NET JRF (Computer Science & Applications) and actively mentoring students in Data Structures, Algorithms, System Design, and Full-Stack Engineering.',
   ],
   resume: 'https://drive.google.com/file/d/19om4OGT9LOv5YrqcTWmNHxF7rEnUkMQ0/view',
@@ -63,7 +63,7 @@ export const experienceAndEducation = [
     highlights: [
       'Delivered custom client platforms including LegisForum (full-stack legal query management portal with custom intake workflows).',
       'Consulting on Model Context Protocol (MCP) tool integrations, pgvector RAG pipelines, and multi-agent workflow automation.',
-      'Executing legacy framework migrations (Angular 12-14 to 19, AngularJS to React) and UI/UX performance refactoring.',
+      'Architected OyeKake 3-in-1 food delivery platform mobile app (React Native & Expo) and healthcare dispensary management systems.',
       'Designing cost-effective, high-throughput backend architectures using Fastify, Node.js, Redis caching, and PostgreSQL.',
     ],
   },

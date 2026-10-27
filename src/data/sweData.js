@@ -201,7 +201,7 @@ export const sweData = {
       badge: 'Enterprise • Micro-Frontend',
       featured: true,
       description:
-        'A Single-SPA micro-frontend platform engineered for Fleet Management Ltd for secure maritime document management, granular role-based permissions, and in-browser previewing.',
+        'A Single-SPA micro-frontend platform engineered for client Fleet Management Ltd (via SourceFuse Technologies) for secure maritime document management, granular role-based permissions, and in-browser previewing.',
       highlights: [
         'Architected role-based user access controls to restrict document visibility across multi-tenant fleet operations.',
         'Implemented in-browser PDF and image rendering using pdfjs-dist and Pdf-lib.',
@@ -216,7 +216,7 @@ export const sweData = {
       badge: 'Frontend • Data Visualization',
       featured: true,
       description:
-        'Interactive maritime data visualization and analytics dashboard built for Fleet Management Ltd, delivering real-time vessel monitoring and port-of-discharge tracking.',
+        'Interactive maritime data visualization and analytics dashboard built for client Fleet Management Ltd (via SourceFuse Technologies), delivering real-time vessel monitoring and port-of-discharge tracking.',
       highlights: [
         'Engineered dynamic Highcharts and D3.js visualization proof of concepts adhering to maritime analytics standards.',
         'Optimized application responsiveness across shipboard and desktop devices with SonarQube quality refactoring.',
@@ -231,7 +231,7 @@ export const sweData = {
       badge: 'Enterprise • Angular 19',
       featured: false,
       description:
-        'Large-scale enterprise migration of Rakuten’s vendor management portal from Angular 13 to Angular 19, resolving breaking UI component changes and optimizing stability.',
+        'Large-scale enterprise migration of client Rakuten Group’s vendor management portal (via SourceFuse Technologies) from Angular 13 to Angular 19, resolving breaking UI component changes and optimizing stability.',
       highlights: [
         'Upgraded Angular framework across enterprise modules while maintaining uninterrupted production workflows.',
         'Refactored Material CSS components to ensure seamless cross-browser consistency and modern design alignment.',

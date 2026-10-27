@@ -27,7 +27,7 @@ const FreelancerView = () => {
         email={freelancerData.email}
         linkedin={freelancerData.linkedin}
         github={freelancerData.github}
-        availabilityText="Available for high-impact Freelance Projects: Full-Stack MVPs (2–4 weeks), GenAI Agents & MCP integrations, enterprise Angular 13→19 migrations, and fractional architecture advisory."
+        availabilityText="Available for high-impact Freelance Projects: Full-Stack MVPs (2–4 weeks), React Native & Expo Mobile Apps, GenAI Agents & MCP integrations, and full-stack architecture advisory."
         formSubjectPrefix="Freelance & MVP Project Inquiry"
       />
     </div>

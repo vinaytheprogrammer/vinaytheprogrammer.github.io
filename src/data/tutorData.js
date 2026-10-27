@@ -254,7 +254,7 @@ export const tutorData = {
     {
       question: 'What makes your teaching different from recorded YouTube videos or bootcamps?',
       answer:
-        'I have 2+ years of active software engineering experience at companies like SourceFuse, Rakuten, and Fleet Management Ltd. I teach how software is built and reviewed in the real world. You get personal attention, live code debugging, and GitHub PR reviews that no pre-recorded video can provide.',
+        'I have 2+ years of active software engineering experience at SourceFuse Technologies delivering production systems for global enterprise clients like Rakuten Group and Fleet Management Ltd. I teach how software is built and reviewed in the real world. You get personal attention, live code debugging, and GitHub PR reviews that no pre-recorded video can provide.',
     },
   ],
 };
