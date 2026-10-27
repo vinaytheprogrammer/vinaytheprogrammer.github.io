@@ -2,19 +2,28 @@ import React, { useState } from 'react';
 import { Mail, Copy, Check, Send, MessageSquare, Sparkles } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../Icons';
 import confetti from 'canvas-confetti';
-import { contact, about } from '../../portfolio';
+import { sweData } from '../../data/sweData';
 import './Contact.css';
 
-const Contact = () => {
+const Contact = ({
+  badge = 'Get In Touch',
+  title = "Let's build something",
+  highlightText = 'remarkable',
+  subtitle = 'Whether you have an open software engineering role, architecture challenge, or collaboration, feel free to reach out.',
+  email = sweData.email,
+  linkedin = sweData.linkedin,
+  github = sweData.github,
+  availabilityText = 'Available for Full-time Software Engineering roles (Full Stack / GenAI), enterprise engineering teams, and open-source collaborations.',
+  formSubjectPrefix = 'SWE Portfolio Inquiry',
+}) => {
   const [copied, setCopied] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [sentNotice, setSentNotice] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText(contact.email);
+    navigator.clipboard.writeText(email);
     setCopied(true);
-    
-    // Trigger festive micro-animation
+
     try {
       confetti({
         particleCount: 50,
@@ -22,7 +31,7 @@ const Contact = () => {
         origin: { y: 0.8 },
       });
     } catch (e) {
-      // fallback if canvas-confetti is not loaded
+      // fallback
     }
 
     setTimeout(() => setCopied(false), 2500);
@@ -31,13 +40,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.message) return;
-    
-    // Open email client with pre-filled message
-    const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.name}`);
+
+    const subject = encodeURIComponent(`${formSubjectPrefix} from ${formData.name}`);
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     setSentNotice(true);
   };
 
@@ -45,25 +53,23 @@ const Contact = () => {
     <section id="contact" className="section contact-section">
       <div className="container">
         <div className="section-header">
-          <span className="section-badge">Get In Touch</span>
+          <span className="section-badge">{badge}</span>
           <h2 className="section-title">
-            Let's build something <span className="text-gradient">remarkable</span>
+            {title} <span className="text-gradient">{highlightText}</span>
           </h2>
-          <p className="section-subtitle">
-            Whether you have an open engineering role, a software project, or simply want to connect, feel free to reach out.
-          </p>
+          <p className="section-subtitle">{subtitle}</p>
         </div>
 
         <div className="contact-grid">
           {/* Direct Email & Social Info */}
           <div className="contact-info-card glass-card">
-            <h3 className="contact-info-title">Contact Information</h3>
-            <p className="contact-availability">{contact.availability}</p>
+            <h3 className="contact-info-title">Contact Channels</h3>
+            <p className="contact-availability">{availabilityText}</p>
 
             <div className="contact-email-box">
               <span className="email-label">Direct Email Address:</span>
               <div className="email-display-row">
-                <span className="email-text">{contact.email}</span>
+                <span className="email-text">{email}</span>
                 <button
                   onClick={handleCopyEmail}
                   className="copy-btn"
@@ -80,7 +86,7 @@ const Contact = () => {
               <span className="connect-label">Connect Online:</span>
               <div className="social-links-row">
                 <a
-                  href={contact.linkedin}
+                  href={linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-card-btn"
@@ -89,7 +95,7 @@ const Contact = () => {
                   <span>LinkedIn Profile</span>
                 </a>
                 <a
-                  href={contact.github}
+                  href={github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-card-btn"
@@ -145,7 +151,7 @@ const Contact = () => {
                     id="contact-message"
                     required
                     rows="4"
-                    placeholder="Tell me about your project, team, or opportunity..."
+                    placeholder="Tell me about your team, role, or project..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   ></textarea>

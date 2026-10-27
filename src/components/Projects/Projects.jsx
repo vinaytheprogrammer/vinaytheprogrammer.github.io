@@ -1,27 +1,25 @@
 import React, { useState } from 'react';
 import { ExternalLink, Lock } from 'lucide-react';
 import { GithubIcon } from '../Icons';
-import { projects } from '../../portfolio';
+import { sweData } from '../../data/sweData';
 import './Projects.css';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const categories = [
-    { id: 'all', label: 'All Projects' },
+    { id: 'all', label: 'All SWE Projects' },
     { id: 'featured', label: 'Featured' },
-    { id: 'genai', label: 'GenAI & Agents' },
-    { id: 'fullstack', label: 'Full Stack & Enterprise' },
-    { id: 'frontend', label: 'Frontend & Micro-Frontends' },
+    { id: 'genai', label: 'GenAI & Multi-Agent' },
+    { id: 'enterprise', label: 'Enterprise & Micro-Frontends' },
     { id: 'backend', label: 'Backend & Systems' },
   ];
 
-  const filteredProjects = projects.filter((project) => {
+  const filteredProjects = sweData.projects.filter((project) => {
     if (filter === 'all') return true;
     if (filter === 'featured') return project.featured;
     if (filter === 'genai') return project.badge.toLowerCase().includes('genai') || project.badge.toLowerCase().includes('ai');
-    if (filter === 'fullstack') return project.badge.toLowerCase().includes('full stack') || project.badge.toLowerCase().includes('saas') || project.badge.toLowerCase().includes('healthcare');
-    if (filter === 'frontend') return project.badge.toLowerCase().includes('frontend') || project.badge.toLowerCase().includes('micro-frontend') || project.badge.toLowerCase().includes('angular');
+    if (filter === 'enterprise') return project.badge.toLowerCase().includes('enterprise') || project.badge.toLowerCase().includes('micro-frontend') || project.badge.toLowerCase().includes('angular') || project.badge.toLowerCase().includes('healthcare');
     if (filter === 'backend') return project.badge.toLowerCase().includes('backend') || project.badge.toLowerCase().includes('infrastructure');
     return true;
   });
@@ -30,12 +28,12 @@ const Projects = () => {
     <section id="projects" className="section projects-section">
       <div className="container">
         <div className="section-header">
-          <span className="section-badge">Portfolio</span>
+          <span className="section-badge">Production Systems</span>
           <h2 className="section-title">
-            Featured <span className="text-gradient">Projects</span>
+            Featured <span className="text-gradient">Engineering Projects</span>
           </h2>
           <p className="section-subtitle">
-            A selection of production-grade platforms, full-stack applications, and backend systems I have engineered.
+            A selection of production-grade platforms, multi-agent AI systems, and microservices I have engineered.
           </p>
 
           {/* Filter Tabs */}
@@ -59,88 +57,58 @@ const Projects = () => {
               <div className="project-top">
                 <span className="project-badge">{project.badge}</span>
                 <div className="project-links">
-                  {project.sourceCode && (
+                  {project.sourceCode ? (
                     <a
                       href={project.sourceCode}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-icon-link"
-                      aria-label={`${project.name} Source Code on GitHub`}
+                      className="project-link-btn"
+                      aria-label="View Source Code"
                       title="GitHub Repository"
                     >
                       <GithubIcon size={18} />
                     </a>
+                  ) : (
+                    <span
+                      className="project-link-disabled"
+                      title="Enterprise Proprietary / Internal Repository"
+                    >
+                      <Lock size={16} />
+                    </span>
                   )}
-                  {project.livePreview && project.livePreview !== '#' && (
+
+                  {project.livePreview ? (
                     <a
                       href={project.livePreview}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-icon-link"
-                      aria-label={`${project.name} Live Demo`}
-                      title="Live Demo"
+                      className="project-link-btn"
+                      aria-label="View Live Deployment"
+                      title="Live Preview"
                     >
                       <ExternalLink size={18} />
                     </a>
-                  )}
-                  {!project.sourceCode && !project.livePreview && (
-                    <span className="project-icon-link" title="Enterprise Repository (Proprietary)">
-                      <Lock size={16} />
-                    </span>
-                  )}
+                  ) : null}
                 </div>
               </div>
 
-              <h3 className="project-title">{project.name}</h3>
+              <h3 className="project-name">{project.name}</h3>
               <p className="project-description">{project.description}</p>
 
               {project.highlights && project.highlights.length > 0 && (
                 <ul className="project-highlights">
-                  {project.highlights.map((h, hIdx) => (
-                    <li key={hIdx}>{h}</li>
+                  {project.highlights.map((h, i) => (
+                    <li key={i}>{h}</li>
                   ))}
                 </ul>
               )}
 
-              <div className="project-footer">
-                <div className="project-stack">
-                  {project.stack.map((tech, tIdx) => (
-                    <span key={tIdx} className="tech-chip">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="project-card-actions">
-                  {project.livePreview && project.livePreview !== '#' && (
-                    <a
-                      href={project.livePreview}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-primary btn-sm"
-                    >
-                      <span>Live Demo</span>
-                      <ExternalLink size={14} />
-                    </a>
-                  )}
-                  {project.sourceCode && (
-                    <a
-                      href={project.sourceCode}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-secondary btn-sm"
-                    >
-                      <GithubIcon size={14} />
-                      <span>Code</span>
-                    </a>
-                  )}
-                  {!project.livePreview && !project.sourceCode && (
-                    <span className="enterprise-tag">
-                      <Lock size={13} />
-                      <span>Enterprise Platform</span>
-                    </span>
-                  )}
-                </div>
+              <div className="project-stack">
+                {project.stack.map((tech, i) => (
+                  <span key={i} className="tech-badge">
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           ))}

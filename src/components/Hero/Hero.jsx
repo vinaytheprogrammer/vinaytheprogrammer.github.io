@@ -1,7 +1,8 @@
 import React from 'react';
-import { ArrowRight, Mail, FileText, Sparkles, MapPin, GraduationCap } from 'lucide-react';
+import { ArrowRight, Mail, FileText, MapPin, GraduationCap } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../Icons';
-import { about } from '../../portfolio';
+import { sweData } from '../../data/sweData';
+import PortalBanner from '../PortalBanner/PortalBanner';
 import './Hero.css';
 
 const Hero = () => {
@@ -13,60 +14,60 @@ const Hero = () => {
         <div className="hero-badge-wrapper animate-fade-in">
           <div className="hero-status-badge">
             <span className="status-dot"></span>
-            <span>Available for Full-time Roles & Projects</span>
+            <span>{sweData.badge}</span>
           </div>
         </div>
 
         {/* Headline */}
         <div className="hero-content">
           <h1 className="hero-title">
-            Hi, I'm <span className="hero-name">{about.name}</span>
+            Hi, I'm <span className="hero-name">{sweData.name}</span>
             <br />
-            <span className="text-gradient">{about.role}</span>
+            <span className="text-gradient">{sweData.title}</span>
           </h1>
 
           <p className="hero-tagline">
-            {about.tagline}
+            {sweData.tagline}
           </p>
 
           <div className="hero-meta">
             <span className="meta-item">
               <GraduationCap size={18} className="meta-icon" />
-              <span>{about.education}</span>
+              <span>{sweData.education}</span>
             </span>
             <span className="meta-item">
               <MapPin size={18} className="meta-icon" />
-              <span>{about.location}</span>
+              <span>{sweData.location}</span>
             </span>
           </div>
 
           {/* Action CTAs */}
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary">
-              <span>View Featured Projects</span>
+              <span>View Production Systems</span>
               <ArrowRight size={17} />
             </a>
 
             <a href="#contact" className="btn btn-secondary">
               <Mail size={17} />
-              <span>Get In Touch</span>
+              <span>Contact Vinay</span>
             </a>
 
             <a
-              href={about.resume}
+              href={sweData.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary resume-cta"
             >
               <FileText size={17} />
-              <span>Resume</span>
+              <span>SWE Resume</span>
             </a>
           </div>
 
           {/* Social Links */}
           <div className="hero-socials">
             <a
-              href={about.social.github}
+              href={sweData.github}
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon-btn"
@@ -76,7 +77,7 @@ const Hero = () => {
               <GithubIcon size={20} />
             </a>
             <a
-              href={about.social.linkedin}
+              href={sweData.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon-btn"
@@ -86,7 +87,7 @@ const Hero = () => {
               <LinkedinIcon size={20} />
             </a>
             <a
-              href={`mailto:${about.social.email}`}
+              href={`mailto:${sweData.email}`}
               className="social-icon-btn"
               aria-label="Email Vinay"
               title="Email"
@@ -96,9 +97,12 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Specialized Portals Switcher */}
+        <PortalBanner />
+
         {/* Metrics Bar */}
         <div className="hero-metrics-grid">
-          {about.metrics.map((metric, idx) => (
+          {sweData.metrics.map((metric, idx) => (
             <div key={idx} className="metric-card glass-card">
               <span className="metric-value text-gradient">{metric.value}</span>
               <span className="metric-label">{metric.label}</span>

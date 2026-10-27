@@ -1,0 +1,49 @@
+.tutor-hero-section {
+  padding: 8rem 0 4rem;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 65%);
+}
+
+.tutor-badge {
+  border-color: rgba(16, 185, 129, 0.3) !important;
+  background: rgba(16, 185, 129, 0.08) !important;
+  color: #10b981 !important;
+}
+
+.status-dot.green {
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+}
+
+.tutor-gradient {
+  background: linear-gradient(135deg, #34d399 0%, #06b6d4 50%, #3b82f6 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.tutor-hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin-top: -0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tutor-icon {
+  color: #10b981;
+}
+
+.tutor-btn-primary {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+}
+
+.tutor-btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45) !important;
+}
+
+.tutor-metric-card:hover {
+  border-color: rgba(16, 185, 129, 0.4) !important;
+}

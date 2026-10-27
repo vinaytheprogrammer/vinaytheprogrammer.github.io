@@ -1,13 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { Sun, Moon, Menu, X, FileText } from 'lucide-react';
+import { Sun, Moon, Menu, X, FileText, Sparkles, Send, BookOpen } from 'lucide-react';
 import { useTheme } from '../../contexts/ThemeContext';
-import { header, about } from '../../portfolio';
+import { useNavigation } from '../../contexts/NavigationContext';
+import { sweData } from '../../data/sweData';
+import { tutorData } from '../../data/tutorData';
+import { freelancerData } from '../../data/freelancerData';
+import PersonaSwitcher from '../PersonaSwitcher/PersonaSwitcher';
 import './Navbar.css';
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
+  const { currentRoute, navigate } = useNavigation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Active data based on current route
+  const activeData =
+    currentRoute === '/tutor'
+      ? tutorData
+      : currentRoute === '/freelancer'
+      ? freelancerData
+      : sweData;
 
   useEffect(() => {
     let isScrolledRef = false;
@@ -33,20 +46,46 @@ const Navbar = () => {
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
+  const handleBrandClick = (e) => {
+    e.preventDefault();
+    navigate(currentRoute, 'top');
+    closeMobileMenu();
+  };
+
+  const handleNavClick = (e, href) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = href.substring(1);
+      navigate(currentRoute, targetId);
+      closeMobileMenu();
+    }
+  };
+
   return (
     <header className={`navbar-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
-        <a href="#top" className="nav-brand" onClick={closeMobileMenu}>
-          <span className="brand-badge">VG</span>
-          <span className="brand-text">Vinay Gupta</span>
+        
+        {/* Brand */}
+        <a href="#top" className="nav-brand" onClick={handleBrandClick}>
+          <span className="brand-badge">{activeData.brandBadge || 'VG'}</span>
+          <span className="brand-text">{activeData.brand || 'Vinay Gupta'}</span>
         </a>
+
+        {/* Central Persona Switcher on Desktop */}
+        <div className="nav-center-switcher">
+          <PersonaSwitcher />
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="desktop-nav">
           <ul className="nav-links">
-            {header.navLinks.map((link) => (
+            {activeData.navLinks.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="nav-link">
+                <a
+                  href={link.href}
+                  className="nav-link"
+                  onClick={(e) => handleNavClick(e, link.href)}
+                >
                   {link.name}
                 </a>
               </li>
@@ -63,19 +102,40 @@ const Navbar = () => {
               {theme === 'dark' ? <Sun size={19} /> : <Moon size={19} />}
             </button>
 
-            <a
-              href={about.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary btn-sm resume-btn"
-            >
-              <FileText size={15} />
-              <span>Resume</span>
-            </a>
+            {currentRoute === '/tutor' ? (
+              <a
+                href={tutorData.teachingRepo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-sm resume-btn tutor-cta-btn"
+              >
+                <BookOpen size={15} />
+                <span>Teaching Repo</span>
+              </a>
+            ) : currentRoute === '/freelancer' ? (
+              <a
+                href="#contact"
+                onClick={(e) => handleNavClick(e, '#contact')}
+                className="btn btn-primary btn-sm resume-btn freelance-cta-btn"
+              >
+                <Send size={15} />
+                <span>Hire Me</span>
+              </a>
+            ) : (
+              <a
+                href={sweData.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-sm resume-btn"
+              >
+                <FileText size={15} />
+                <span>Resume</span>
+              </a>
+            )}
           </div>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Actions */}
         <div className="mobile-actions">
           <button
             onClick={toggleTheme}
@@ -96,27 +156,59 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div className={`mobile-drawer ${mobileMenuOpen ? 'open' : ''}`}>
+        <div className="mobile-drawer-header">
+          <span className="mobile-drawer-title">Switch Profile</span>
+          <PersonaSwitcher isMobile onSelect={closeMobileMenu} />
+        </div>
+
         <ul className="mobile-links">
-          {header.navLinks.map((link) => (
+          {activeData.navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} onClick={closeMobileMenu} className="mobile-link">
+              <a
+                href={link.href}
+                className="mobile-link"
+                onClick={(e) => handleNavClick(e, link.href)}
+              >
                 {link.name}
               </a>
             </li>
           ))}
-          <li className="mobile-resume-item">
+        </ul>
+
+        <div className="mobile-drawer-cta">
+          {currentRoute === '/tutor' ? (
             <a
-              href={about.resume}
+              href={tutorData.teachingRepo}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary btn-mobile-resume"
+              className="btn btn-primary btn-block"
+              onClick={closeMobileMenu}
+            >
+              <BookOpen size={16} />
+              <span>Explore Teaching Repo</span>
+            </a>
+          ) : currentRoute === '/freelancer' ? (
+            <a
+              href="#contact"
+              className="btn btn-primary btn-block"
+              onClick={(e) => handleNavClick(e, '#contact')}
+            >
+              <Send size={16} />
+              <span>Request Discovery Call</span>
+            </a>
+          ) : (
+            <a
+              href={sweData.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary btn-block"
               onClick={closeMobileMenu}
             >
               <FileText size={16} />
-              <span>Download Resume</span>
+              <span>Download SWE Resume</span>
             </a>
-          </li>
-        </ul>
+          )}
+        </div>
       </div>
     </header>
   );

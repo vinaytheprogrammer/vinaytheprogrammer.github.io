@@ -1,6 +1,6 @@
 import React from 'react';
 import { GraduationCap, Briefcase, Calendar, CheckCircle2 } from 'lucide-react';
-import { experienceAndEducation } from '../../portfolio';
+import { sweData } from '../../data/sweData';
 import './Experience.css';
 
 const Experience = () => {
@@ -8,12 +8,12 @@ const Experience = () => {
     <section id="experience" className="section experience-section">
       <div className="container">
         <div className="section-header">
-          <span className="section-badge">Journey & Background</span>
+          <span className="section-badge">Career & Education</span>
           <h2 className="section-title">
-            Education & <span className="text-gradient">Experience</span>
+            Engineering & <span className="text-gradient">Experience</span>
           </h2>
           <p className="section-subtitle">
-            My academic credentials from NIT Jamshedpur and practical engineering background.
+            Enterprise software engineering at SourceFuse, Rakuten Group, Fleet Management, and NIT Jamshedpur credentials.
           </p>
         </div>
 
@@ -21,7 +21,7 @@ const Experience = () => {
           <div className="timeline-line"></div>
 
           <div className="timeline-items">
-            {experienceAndEducation.map((item, idx) => (
+            {sweData.experiences.map((item, idx) => (
               <div key={idx} className="timeline-item">
                 <div className="timeline-marker">
                   {item.type === 'education' ? (
@@ -35,7 +35,7 @@ const Experience = () => {
                   <div className="timeline-header">
                     <div>
                       <h3 className="timeline-title">{item.title}</h3>
-                      <h4 className="timeline-subtitle">{item.subtitle}</h4>
+                      <h4 className="timeline-subtitle">{item.role}</h4>
                     </div>
                     <span className="timeline-period">
                       <Calendar size={14} />
@@ -43,7 +43,7 @@ const Experience = () => {
                     </span>
                   </div>
 
-                  <p className="timeline-description">{item.description}</p>
+                  <p className="timeline-description">{item.summary}</p>
 
                   {item.highlights && item.highlights.length > 0 && (
                     <ul className="timeline-highlights">

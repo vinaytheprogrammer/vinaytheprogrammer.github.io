@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, Code2, Layout, Server, Database, Wrench } from 'lucide-react';
-import { skills } from '../../portfolio';
+import { sweData } from '../../data/sweData';
 import './Skills.css';
 
 const Skills = () => {
@@ -15,7 +15,7 @@ const Skills = () => {
     { id: 'toolsAndDevops', label: 'Tools & DevOps', icon: <Wrench size={18} /> },
   ];
 
-  const currentSkills = skills[activeCategory] || [];
+  const currentSkills = sweData.skills[activeCategory] || [];
 
   return (
     <section id="skills" className="section skills-section">
@@ -26,7 +26,7 @@ const Skills = () => {
             Skills & <span className="text-gradient">Technologies</span>
           </h2>
           <p className="section-subtitle">
-            A comprehensive breakdown of tools, frameworks, and programming languages I use to build scalable products.
+            A comprehensive breakdown of enterprise tools, frameworks, and languages I use to engineer software.
           </p>
 
           {/* Category Tabs */}

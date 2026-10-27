@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import About from './components/About/About';
-import Experience from './components/Experience/Experience';
-import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
-import Contact from './components/Contact/Contact';
+import SweView from './views/SweView';
+import TutorView from './views/TutorView';
+import FreelancerView from './views/FreelancerView';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import { useNavigation } from './contexts/NavigationContext';
 
 const App = () => {
+  const { currentRoute } = useNavigation();
+  const lenisRef = useRef(null);
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.0,
@@ -22,6 +23,7 @@ const App = () => {
       wheelMultiplier: 1.1,
       touchMultiplier: 1.5,
     });
+    lenisRef.current = lenis;
 
     let rafId;
     function raf(time) {
@@ -51,19 +53,36 @@ const App = () => {
       cancelAnimationFrame(rafId);
       document.removeEventListener('click', handleAnchorClick);
       lenis.destroy();
+      lenisRef.current = null;
     };
   }, []);
 
+  // When currentRoute changes, scroll smoothly to top
+  useEffect(() => {
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [currentRoute]);
+
+  const renderActiveView = () => {
+    switch (currentRoute) {
+      case '/tutor':
+        return <TutorView />;
+      case '/freelancer':
+        return <FreelancerView />;
+      case '/':
+      default:
+        return <SweView />;
+    }
+  };
+
   return (
-    <div className="portfolio-app">
+    <div className={`portfolio-app route-${currentRoute.replace('/', '') || 'swe'}`}>
       <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
+      <main key={currentRoute} className="view-transition-wrapper animate-fade-in">
+        {renderActiveView()}
       </main>
       <Footer />
       <ScrollToTop />
