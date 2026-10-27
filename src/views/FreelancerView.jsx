@@ -2,6 +2,7 @@ import React from 'react';
 import FreelancerHero from '../components/Freelancer/FreelancerHero';
 import FreelancerCaseStudies from '../components/Freelancer/FreelancerCaseStudies';
 import FreelancerServices from '../components/Freelancer/FreelancerServices';
+import FreelancerTechStack from '../components/Freelancer/FreelancerTechStack';
 import {
   FreelancerProcess,
   FreelancerPricing,
@@ -17,6 +18,7 @@ const FreelancerView = () => {
       <FreelancerServices />
       <FreelancerCaseStudies />
       <FreelancerProcess />
+      <FreelancerTechStack />
       <FreelancerPricing />
       <FreelancerFaq />
       <Contact

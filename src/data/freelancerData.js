@@ -213,6 +213,105 @@ export const freelancerData = {
     },
   ],
 
+  techStack: [
+    {
+      id: 'mobile',
+      category: 'Mobile & Cross-Platform',
+      badge: 'React Native & Expo',
+      highlight: 'Unified Android & iOS Codebases • Google Play Deployment',
+      description:
+        'Lean, high-performance mobile apps built with React Native and Expo, featuring offline storage, push notifications, and device hardware integrations without recurring SDK license fees.',
+      skills: [
+        { name: 'React Native', level: 'Production Ready', tag: 'Core Mobile' },
+        { name: 'Expo & EAS Build', level: 'Production Ready', tag: 'Cloud Compilation' },
+        { name: 'Native Navigation Intents', level: 'Production Ready', tag: 'Zero-Cost Maps' },
+        { name: 'Hardware APIs (GPS & Audio)', level: 'Production Ready', tag: 'Device APIs' },
+        { name: 'In-App Push Notifications', level: 'Production Ready', tag: 'Retention' },
+        { name: 'Google Play Store Releases', level: 'Production Ready', tag: 'CI/CD AAB' },
+      ],
+    },
+    {
+      id: 'frontend',
+      category: 'Frontend & Modern Web',
+      badge: 'React 18 & Next.js',
+      highlight: 'High-Converting Responsive SPAs & Dashboards',
+      description:
+        'Modern, lightning-fast web applications engineered with React 18, Next.js, and TypeScript, featuring sleek dark modes, micro-animations, and clean component architectures.',
+      skills: [
+        { name: 'React 18', level: 'Production Ready', tag: 'Core Web' },
+        { name: 'Next.js', level: 'Production Ready', tag: 'SSR & SSG' },
+        { name: 'TypeScript', level: 'Production Ready', tag: 'Type Safety' },
+        { name: 'Vite', level: 'Production Ready', tag: 'Fast Bundling' },
+        { name: 'Tailwind CSS', level: 'Production Ready', tag: 'Modern Styling' },
+        { name: 'State Management (Zustand/Context)', level: 'Production Ready', tag: 'State' },
+      ],
+    },
+    {
+      id: 'genai',
+      category: 'Generative AI & LLMs',
+      badge: 'Multi-Agent & RAG',
+      highlight: 'Autonomous Workflows • Zero Hallucination Systems',
+      description:
+        'Production-grade multi-agent architectures, pgvector RAG pipelines, and Model Context Protocol (MCP) servers enabling LLMs to safely query databases and execute multi-step business actions.',
+      skills: [
+        { name: 'Mastra Multi-Agent Framework', level: 'Production Ready', tag: 'Agent Orchestration' },
+        { name: 'AWS Bedrock AgentCore', level: 'Production Ready', tag: 'Foundation Models' },
+        { name: 'pgvector RAG Pipelines', level: 'Production Ready', tag: 'Semantic Search' },
+        { name: 'Model Context Protocol (MCP)', level: 'Production Ready', tag: 'Tool Servers' },
+        { name: 'Structured Outputs (Zod)', level: 'Production Ready', tag: 'Guaranteed Schema' },
+        { name: 'LangSmith & OpenTelemetry', level: 'Production Ready', tag: 'Tracing & Observability' },
+      ],
+    },
+    {
+      id: 'backend',
+      category: 'Backend & High-Throughput APIs',
+      badge: 'Fastify & Node.js',
+      highlight: 'Low-Latency Microservices & Redis Caching',
+      description:
+        'Scalable backend services with token-bucket rate limiting, Redis cache-aside architectures, transaction safety, and rigorous input validation.',
+      skills: [
+        { name: 'Node.js', level: 'Production Ready', tag: 'Runtime' },
+        { name: 'Fastify', level: 'Production Ready', tag: 'Low Overhead' },
+        { name: 'Express.js', level: 'Production Ready', tag: 'RESTful Microservices' },
+        { name: 'Redis Caching & Queues', level: 'Production Ready', tag: 'High Concurrency' },
+        { name: 'OAuth 2.0 & JWT Security', level: 'Production Ready', tag: 'Zero-Trust Auth' },
+        { name: 'WebSockets & SSE Streaming', level: 'Production Ready', tag: 'Real-Time Sync' },
+      ],
+    },
+    {
+      id: 'database',
+      category: 'Databases & Cloud Infrastructure',
+      badge: 'PostgreSQL & AWS',
+      highlight: 'Optimized Schemas • Automated CI/CD Deployments',
+      description:
+        'Relational and NoSQL database management, connection pooling, automated cloud provisioning, and containerized deployment pipelines.',
+      skills: [
+        { name: 'PostgreSQL', level: 'Production Ready', tag: 'Relational DB' },
+        { name: 'MongoDB Atlas', level: 'Production Ready', tag: 'Document DB' },
+        { name: 'Prisma ORM', level: 'Production Ready', tag: 'Type-Safe ORM' },
+        { name: 'AWS (S3, EC2, Bedrock)', level: 'Production Ready', tag: 'Cloud Infra' },
+        { name: 'Docker Containerization', level: 'Production Ready', tag: 'DevOps' },
+        { name: 'Vercel & DigitalOcean', level: 'Production Ready', tag: 'CI/CD Deploy' },
+      ],
+    },
+    {
+      id: 'payments',
+      category: 'Payments, Auth & Integrations',
+      badge: 'Razorpay & Stripe',
+      highlight: 'Turnkey Monetization & Third-Party Connectors',
+      description:
+        'End-to-end integration of payment gateways, automated transactional notifications, and secure third-party SaaS webhooks.',
+      skills: [
+        { name: 'Razorpay (UPI, Cards, Netbanking)', level: 'Production Ready', tag: 'Payment Gateway' },
+        { name: 'Stripe Payments', level: 'Production Ready', tag: 'Global Billing' },
+        { name: 'Google OAuth 2.0 + PKCE', level: 'Production Ready', tag: 'SSO Login' },
+        { name: 'Automated Email (Nodemailer / Resend)', level: 'Production Ready', tag: 'Notifications' },
+        { name: 'Dynamic Invoicing & Receipts', level: 'Production Ready', tag: 'Billing PDF' },
+        { name: 'Third-Party Webhook Handlers', level: 'Production Ready', tag: 'SaaS Connectors' },
+      ],
+    },
+  ],
+
   pricingModels: [
     {
       name: 'Fixed-Scope MVP',
