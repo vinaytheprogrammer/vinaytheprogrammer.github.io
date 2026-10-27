@@ -35,6 +35,7 @@ export const sweData = {
     'Specialized in Generative AI engineering—architecting production-grade multi-agent LLM systems with Mastra and AWS Bedrock AgentCore, pgvector RAG pipelines, and Model Context Protocol (MCP) server tooling.',
     'Production-proven across enterprise client engagements including Rakuten Group (migrated enterprise vendor portal from Angular 13 to 19 with zero regressions) and Fleet Management Ltd (engineered Single-SPA maritime document management micro-frontends and D3.js/Highcharts visualization POCs).',
     'Beyond enterprise web platforms, I build cross-platform mobile apps with React Native & Expo (e.g. OyeKake 3-in-1 food delivery platform) and actively take technical mock interviews for juniors at NIT Jamshedpur to assist them with campus placement preparation.',
+    'Currently expanding my cloud-native depth by implementing AWS services, Amazon EKS (Kubernetes cluster orchestration), Infrastructure as Code with Terraform, automated database migration pipelines, and resilient scheduled cron job deployments.',
     'I am deeply passionate about the open-source ecosystem—regularly contributing to developer tooling (MCP extensions, security fixes) and actively looking for new open-source projects to learn from, collaborate with, and contribute to.',
   ],
 
@@ -61,9 +62,9 @@ export const sweData = {
       capabilities: [
         'High-concurrency services using Fastify, Node.js, and Express',
         'Cache-aside architecture & token-bucket rate limiting via Redis',
-        'PostgreSQL & MongoDB schema modeling with Prisma & LoopBack 4',
+        'Database migrations (Prisma/SQL), automated cron jobs & worker processes',
       ],
-      tech: ['Fastify', 'Node.js', 'PostgreSQL', 'Redis', 'Prisma', 'REST APIs'],
+      tech: ['Fastify', 'Node.js', 'PostgreSQL', 'Redis', 'AWS EKS', 'Terraform'],
     },
     {
       id: 'frontend',
@@ -111,15 +112,16 @@ export const sweData = {
     },
     {
       type: 'work',
-      title: 'Open Source Creator & Community Contributor',
-      role: 'Active Contributor & Open Source Learner',
+      title: 'Cloud-Native & Open Source Engineering',
+      role: 'Active Contributor & Cloud Practitioner',
       period: 'Ongoing',
       summary:
-        'Actively publishing developer tooling, contributing security fixes, and exploring new open-source projects to learn and collaborate with public communities.',
+        'Actively implementing AWS cloud services, Amazon EKS, Terraform Infrastructure as Code (IaC), automated database migrations, cron job deployments, and publishing developer tooling.',
       highlights: [
+        'Cloud Infrastructure & IaC: Learning and provisioning AWS services (EKS clusters, S3, IAM, VPC, EC2) using Terraform, managing containerized pod lifecycles and ingress.',
+        'Database Reliability: Engineering automated database migration workflows, schema versioning, and rollback strategies across PostgreSQL and Prisma ORM environments.',
+        'Scheduled Automation: Creating, configuring, and deploying resilient cron jobs and background worker queues for automated maintenance, syncs, and report generation.',
         'Extended Model Context Protocol (MCP) server tooling with RESTful resource mutation operations (POST, PATCH, DELETE, and resource deletion by ID).',
-        'Created ChitChat AI (Google Gemini streaming conversational agent) and API Proxy Server (Redis caching & rate limiting gateway).',
-        'Proactively remediating security CVEs (Trivy) and SonarQube quality gates across open-source codebases.',
         'Actively looking for new high-impact open-source projects to learn, collaborate, and contribute.',
       ],
     },
@@ -331,13 +333,15 @@ export const sweData = {
       { name: 'MySQL & SQLite', level: 'Proficient' },
     ],
     toolsAndDevops: [
-      { name: 'AWS (Bedrock, S3, SES, Lambda)', level: 'Proficient' },
-      { name: 'Git, GitHub & Bitbucket', level: 'Advanced' },
+      { name: 'AWS Services (EKS, Bedrock, S3, EC2)', level: 'Advanced' },
+      { name: 'Terraform (Infrastructure as Code)', level: 'Advanced' },
+      { name: 'Kubernetes (Amazon EKS Orchestration)', level: 'Proficient' },
+      { name: 'Database Migrations & Schema Versioning', level: 'Advanced' },
+      { name: 'Cron Jobs & Scheduled Deployments', level: 'Advanced' },
+      { name: 'Docker Containerization', level: 'Advanced' },
+      { name: 'Git, GitHub Actions & CI/CD', level: 'Advanced' },
       { name: 'Expo EAS Build', level: 'Advanced' },
-      { name: 'Claude Code', level: 'Advanced' },
-      { name: 'Docker', level: 'Intermediate' },
-      { name: 'Postman & API Testing', level: 'Advanced' },
-      { name: 'Trivy & SonarQube', level: 'Proficient' },
+      { name: 'Trivy & SonarQube Security', level: 'Proficient' },
     ],
   },
 };
