@@ -4,9 +4,10 @@ export const sweData = {
   name: 'Vinay Gupta',
   brand: 'Vinay Gupta',
   brandBadge: 'VG',
-  badge: 'Available for Full-time Roles & Engineering Teams',
+  badge: 'Available for Full-time Roles • Open Source Contributor',
+  openSourceCallout: 'Actively looking for new high-impact Open Source projects to learn, collaborate, and contribute.',
   tagline:
-    'Architecting multi-agent LLM systems, enterprise micro-frontends, high-throughput microservices, and distributed cloud applications.',
+    'Architecting multi-agent LLM systems, enterprise micro-frontends, high-throughput microservices, and cross-platform Expo mobile apps.',
   education: 'NIT Jamshedpur (MCA 2025)',
   location: 'India',
   resumeUrl: 'https://drive.google.com/file/d/19om4OGT9LOv5YrqcTWmNHxF7rEnUkMQ0/view',
@@ -25,15 +26,16 @@ export const sweData = {
   metrics: [
     { label: 'Current Role', value: 'SourceFuse Tech' },
     { label: 'GenAI & Multi-Agent', value: 'Mastra • Bedrock • MCP' },
-    { label: 'Frontend & Micro-Frontends', value: 'React 18 • Angular 19' },
-    { label: 'Academic Depth', value: 'NIT Jamshedpur (MCA)' },
+    { label: 'Frontend & Mobile', value: 'React 18 • Expo • Angular 19' },
+    { label: 'Academic Standing', value: 'NIT Jamshedpur (MCA)' },
   ],
 
   bio: [
-    'I am a Full Stack and Generative AI Developer at SourceFuse Technologies and an alumnus of National Institute of Technology (NIT), Jamshedpur (MCA 2025).',
+    'I am a Full Stack and Generative AI Developer at SourceFuse Technologies, an active Open Source Contributor, and an alumnus of National Institute of Technology (NIT), Jamshedpur (MCA 2025).',
     'Specialized in Generative AI engineering—architecting production-grade multi-agent LLM systems with Mastra and AWS Bedrock AgentCore, pgvector RAG pipelines, and Model Context Protocol (MCP) server tooling.',
     'Production-proven across enterprise client engagements including Rakuten Group (migrated enterprise vendor portal from Angular 13 to 19 with zero regressions) and Fleet Management Ltd (engineered Single-SPA maritime document management micro-frontends and D3.js/Highcharts visualization POCs).',
-    'Deeply focused on software reliability, enterprise auth (OAuth 2.0, PKCE, JWT with Redis token rotation), IDOR vulnerability elimination, and Trivy security remediation across modern TypeScript, Fastify, and React ecosystems.',
+    'Beyond enterprise web platforms, I build cross-platform mobile apps with React Native & Expo (e.g. OyeKake 3-in-1 food delivery platform) and actively take technical mock interviews for juniors at NIT Jamshedpur to assist them with campus placement preparation.',
+    'I am deeply passionate about the open-source ecosystem—regularly contributing to developer tooling (MCP extensions, security fixes) and actively looking for new open-source projects to learn from, collaborate with, and contribute to.',
   ],
 
   pillars: [
@@ -65,16 +67,16 @@ export const sweData = {
     },
     {
       id: 'frontend',
-      badge: 'Scalable UI',
-      title: 'Frontend & Micro-Frontends',
+      badge: 'Scalable UI & Mobile',
+      title: 'Frontend, Mobile & Micro-Frontends',
       description:
-        'Engineering modular Single-SPA micro-frontend architectures, executing large-scale enterprise framework upgrades, and crafting interactive data dashboards.',
+        'Engineering modular Single-SPA micro-frontend architectures, cross-platform React Native / Expo mobile apps, and enterprise framework upgrades.',
       capabilities: [
         'Single-SPA micro-frontends with in-browser PDF/image rendering',
+        'Cross-platform mobile engineering with React Native & Expo EAS Build',
         'Zero-regression framework migrations: Angular 13 → 19 LTS',
-        'Interactive analytics dashboards using D3.js and Highcharts',
       ],
-      tech: ['React 18', 'Angular 19', 'Single-SPA', 'TypeScript', 'Highcharts', 'Tailwind'],
+      tech: ['React 18', 'React Native', 'Expo', 'Angular 19', 'TypeScript', 'Highcharts'],
     },
     {
       id: 'security',
@@ -109,15 +111,29 @@ export const sweData = {
     },
     {
       type: 'work',
-      title: 'Open Source Creator & Security Contributor',
-      role: 'Public Repository Contributor',
+      title: 'Open Source Creator & Community Contributor',
+      role: 'Active Contributor & Open Source Learner',
       period: 'Ongoing',
       summary:
-        'Actively publishing and maintaining open-source developer tooling, AI integrations, and security patches in public.',
+        'Actively publishing developer tooling, contributing security fixes, and exploring new open-source projects to learn and collaborate with public communities.',
       highlights: [
         'Extended Model Context Protocol (MCP) server tooling with RESTful resource mutation operations (POST, PATCH, DELETE, and resource deletion by ID).',
-        'Built ChitChat AI (Google Gemini streaming conversational agent) and API Proxy Server (Redis caching & token-bucket rate limiting gateway).',
+        'Created ChitChat AI (Google Gemini streaming conversational agent) and API Proxy Server (Redis caching & rate limiting gateway).',
         'Proactively remediating security CVEs (Trivy) and SonarQube quality gates across open-source codebases.',
+        'Actively looking for new high-impact open-source projects to learn, collaborate, and contribute.',
+      ],
+    },
+    {
+      type: 'education',
+      title: 'Campus Leadership & Junior Placement Mentorship',
+      role: 'Technical Interviewer & Placement Guide',
+      period: '2023 – Present',
+      summary:
+        'Conducted technical mock interviews and placement preparation sessions for collegiate juniors at NIT Jamshedpur to help them crack technical hiring drives.',
+      highlights: [
+        'Conducted 1-on-1 mock technical interviews covering algorithmic problem solving, code cleanliness, and live problem breakdown under timed conditions.',
+        'Provided actionable feedback on time/space complexity analysis, communication clarity, and edge-case handling.',
+        'Taught juniors how to break into open source, understand production codebases, and use GitHub PRs to build public proof of skill.',
       ],
     },
     {
@@ -163,6 +179,22 @@ export const sweData = {
       stack: ['React 18', 'Fastify', 'TypeScript', 'Mastra', 'AWS Bedrock', 'Prisma', 'PostgreSQL (pgvector)', 'Redis', 'LangSmith'],
       sourceCode: null,
       livePreview: null,
+    },
+    {
+      name: 'OyeKake — 3-in-1 Food Delivery Platform',
+      badge: 'Mobile App • React Native Expo',
+      featured: true,
+      description:
+        'Full-stack food delivery platform featuring a unified 3-in-1 Android mobile app (Customer, Kitchen, and Delivery Partner roles in one app) backed by a MERN web operations dashboard.',
+      highlights: [
+        'Unified 3-in-1 Android App built with React Native and Expo covering ordering, kitchen audio alerts, and delivery confirmation.',
+        '4-Stage visual milestone order tracker with 4-digit secret delivery confirmation OTP.',
+        '1-Tap Google Maps native navigation intent for delivery partners, eliminating expensive third-party map SDK costs.',
+        'MERN Super Admin & City Dispatch console managing restaurant payouts, 15% platform commissions, and live order queues.',
+      ],
+      stack: ['React Native', 'Expo & EAS Build', 'Node.js', 'Express', 'MongoDB Atlas', 'Razorpay', 'Vite'],
+      sourceCode: 'https://github.com/vinaytheprogrammer/oyekake-poc',
+      livePreview: 'https://vinaytheprogrammer.github.io/oyekake-mvp-quotation/',
     },
     {
       name: 'Fleet QHSE Document Management',
@@ -275,6 +307,7 @@ export const sweData = {
     ],
     frontend: [
       { name: 'React.js (18+)', level: 'Advanced' },
+      { name: 'React Native & Expo', level: 'Advanced' },
       { name: 'Angular (13 → 19)', level: 'Proficient' },
       { name: 'Single-SPA (Micro-Frontends)', level: 'Proficient' },
       { name: 'Tailwind CSS', level: 'Advanced' },
@@ -300,6 +333,7 @@ export const sweData = {
     toolsAndDevops: [
       { name: 'AWS (Bedrock, S3, SES, Lambda)', level: 'Proficient' },
       { name: 'Git, GitHub & Bitbucket', level: 'Advanced' },
+      { name: 'Expo EAS Build', level: 'Advanced' },
       { name: 'Claude Code', level: 'Advanced' },
       { name: 'Docker', level: 'Intermediate' },
       { name: 'Postman & API Testing', level: 'Advanced' },

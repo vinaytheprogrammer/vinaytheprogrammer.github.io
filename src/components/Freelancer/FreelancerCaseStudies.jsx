@@ -1,5 +1,6 @@
 import React from 'react';
-import { Layers, CheckCircle2, ArrowRight, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Layers, CheckCircle2, ArrowRight, ExternalLink, ShieldCheck, Smartphone, FileText } from 'lucide-react';
+import { GithubIcon } from '../Icons';
 import { freelancerData } from '../../data/freelancerData';
 import './FreelancerCaseStudies.css';
 
@@ -13,7 +14,7 @@ const FreelancerCaseStudies = () => {
             Diverse Projects, <span className="text-gradient freelance-gradient">Proven Delivery</span>
           </h2>
           <p className="section-subtitle">
-            A track record spanning legal tech, maritime enterprise micro-frontends, large-scale framework upgrades, and autonomous AI systems.
+            A track record spanning food delivery mobile apps (React Native Expo), legal tech MVPs, maritime micro-frontends, and autonomous AI systems.
           </p>
         </div>
 
@@ -42,6 +43,36 @@ const FreelancerCaseStudies = () => {
                   </li>
                 ))}
               </ul>
+
+              {/* Action Links if POC or Quote URL exists */}
+              {(study.pocUrl || study.quoteUrl) && (
+                <div className="case-action-links">
+                  {study.pocUrl && (
+                    <a
+                      href={study.pocUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="case-btn-link"
+                    >
+                      <GithubIcon size={16} />
+                      <span>Interactive POC Repo</span>
+                      <ExternalLink size={13} />
+                    </a>
+                  )}
+                  {study.quoteUrl && (
+                    <a
+                      href={study.quoteUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="case-btn-link highlight"
+                    >
+                      <FileText size={16} />
+                      <span>Live Architecture Site</span>
+                      <ExternalLink size={13} />
+                    </a>
+                  )}
+                </div>
+              )}
 
               <div className="case-tech-stack">
                 {study.stack.map((tech, i) => (

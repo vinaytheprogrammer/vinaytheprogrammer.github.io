@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Mail, FileText, MapPin, GraduationCap } from 'lucide-react';
+import { ArrowRight, Mail, FileText, MapPin, GraduationCap, GitPullRequest } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../Icons';
 import { sweData } from '../../data/sweData';
 import PortalBanner from '../PortalBanner/PortalBanner';
@@ -40,6 +40,14 @@ const Hero = () => {
               <span>{sweData.location}</span>
             </span>
           </div>
+
+          {/* Open Source Active Contributor Callout */}
+          {sweData.openSourceCallout && (
+            <div className="hero-opensource-callout">
+              <GitPullRequest size={16} className="os-callout-icon" />
+              <span>{sweData.openSourceCallout}</span>
+            </div>
+          )}
 
           {/* Action CTAs */}
           <div className="hero-actions">

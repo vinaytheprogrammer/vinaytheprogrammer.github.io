@@ -4,9 +4,9 @@ export const freelancerData = {
   name: 'Vinay Gupta',
   brand: 'Vinay Gupta',
   brandBadge: 'VG',
-  badge: 'Accepting New Contracts & MVP Builds',
+  badge: 'Accepting New Contracts, MVPs & Mobile Apps',
   tagline:
-    'Helping founders, startups, and product teams build production-grade web applications, multi-agent AI systems, and complex framework migrations with speed, security, and precision.',
+    'Helping founders, startups, and product teams build production-grade web applications, cross-platform Expo mobile apps, and multi-agent AI systems with speed, security, and precision.',
   education: 'NIT Jamshedpur (MCA) • 2+ Yrs Production Experience',
   location: 'Remote (Worldwide Delivery)',
   email: 'vinaygupta.nitjsr@gmail.com',
@@ -24,16 +24,16 @@ export const freelancerData = {
 
   metrics: [
     { label: 'Average MVP Delivery', value: '2–4 Weeks Turnaround' },
+    { label: 'Mobile & Web Stack', value: 'React Native Expo • React 18' },
+    { label: 'GenAI & Microservices', value: 'Mastra • Bedrock • Fastify' },
     { label: 'Delivery Track Record', value: '100% On-Time Delivery' },
-    { label: 'Core Capabilities', value: 'Full Stack & GenAI Agents' },
-    { label: 'Framework Migrations', value: 'Angular 13→19 • React' },
   ],
 
   bio: [
-    'I am an Independent Full Stack & Generative AI Technical Consultant and NIT Jamshedpur (MCA) alumnus with over 2 years of enterprise engineering experience.',
-    'I partner with ambitious founders, business owners, and engineering teams to turn ideas into scalable web applications, deploy autonomous multi-agent AI systems, and execute complex framework migrations without production downtime.',
-    'My work spans diverse industries and technical challenges—from architecting end-to-end legal tech intake platforms (LegisForum) and maritime micro-frontend analytics (Fleet Management Ltd) to upgrading enterprise vendor portals (Rakuten Group) and engineering secure API gateways.',
-    'Whether you need a full-stack MVP delivered in 3 weeks, custom AI agents connected to your database via pgvector & MCP, or an experienced engineer to unblock critical technical debt, I provide transparent communication, weekly demo builds, and clean code you can scale.',
+    'I am an Independent Full Stack, Mobile & Generative AI Technical Consultant and NIT Jamshedpur (MCA) alumnus with over 2 years of enterprise engineering experience.',
+    'I partner with ambitious founders, business owners, and engineering teams to turn ideas into scalable web applications, deploy autonomous multi-agent AI systems, build cross-platform mobile apps using React Native & Expo, and execute complex framework migrations without production downtime.',
+    'My portfolio spans diverse industries and technical challenges—from architecting end-to-end 3-in-1 food delivery mobile platforms (OyeKake) and legal tech intake systems (LegisForum) to maritime micro-frontend analytics (Fleet Management Ltd) and enterprise vendor portal modernization (Rakuten Group).',
+    'Whether you need a full-stack MVP delivered in 3 weeks, custom AI agents connected to your database via pgvector & MCP, an Expo Android app deployed to Google Play, or an experienced engineer to unblock critical technical debt, I provide transparent communication, weekly demo builds, and clean code you can scale.',
   ],
 
   services: [
@@ -49,6 +49,20 @@ export const freelancerData = {
         'Enterprise-grade authentication (OAuth 2.0, JWT, cookies, role-based access)',
         'Payment gateway / intake forms / automated email integrations',
         'Production deployment on AWS, Vercel, or DigitalOcean with CI/CD',
+      ],
+    },
+    {
+      id: 'mobile',
+      title: 'Cross-Platform Mobile Apps (React Native & Expo)',
+      badge: 'Android & iOS',
+      description:
+        'Engineer lean, high-performance mobile apps with React Native and Expo, featuring role-based workflows, in-app payments, and automated cloud builds.',
+      deliverables: [
+        'Single unified React Native / Expo codebase supporting multi-role in-app flows',
+        'Offline caching, push notifications, and device hardware integrations (GPS, audio, camera)',
+        'Native navigation intents (Google Maps, WhatsApp support launchers) to eliminate SDK overhead',
+        'Payment gateway integration with Razorpay (UPI, cards, netbanking) & Stripe',
+        'Standalone APK and production AAB compilation via Expo EAS Build with Google Play deployment',
       ],
     },
     {
@@ -96,6 +110,26 @@ export const freelancerData = {
   ],
 
   caseStudies: [
+    {
+      title: 'OyeKake — 3-in-1 Food Delivery Platform',
+      category: 'Mobile & MERN Platform',
+      badge: 'React Native & Expo Android',
+      client: 'Food Tech Startup Client',
+      summary:
+        'Architected and delivered a lean, cost-efficient food delivery platform featuring a unified 3-in-1 Android mobile app (Customer, Kitchen, and Delivery Partner roles in one app) backed by a MERN web administration console.',
+      impact:
+        'Eliminated expensive recurring map SDK charges and multi-app overhead through smart scope engineering: 4-stage visual order tracking, 1-tap Google Maps navigation, and cloud EAS compilation within a strict ₹1.20L client budget.',
+      highlights: [
+        'Unified 3-in-1 Android App (Expo): Single React Native codebase delivering in-app roles for Customers (menu browsing & checkout), Kitchens (audio chime alerts & order acceptance), and Riders (pickup, navigation & OTP verification).',
+        '4-Stage Order Status Tracker: Visual milestone tracking (Placed ➔ Cooking ➔ Out for Delivery ➔ Delivered) with secret 4-digit delivery confirmation OTP to prevent false drop-offs.',
+        'MERN Super Admin & City Dispatch Portal: React 18 + Vite operations console managing 15% platform commission take-rate, vendor payout reconciliations, restaurant KYC, and live city delivery queues.',
+        'Zero-Overhead Rider Navigation: 1-Tap Google Maps intent launching native turn-by-turn navigation without costly in-app map SDK licenses.',
+        'Integrated Razorpay Payments: Supports UPI, debit/credit cards, netbanking, and Cash on Delivery (COD).',
+      ],
+      stack: ['React Native', 'Expo & EAS Build', 'Node.js', 'Express', 'MongoDB Atlas', 'Razorpay', 'Vite'],
+      pocUrl: 'https://github.com/vinaytheprogrammer/oyekake-poc',
+      quoteUrl: 'https://vinaytheprogrammer.github.io/oyekake-mvp-quotation/',
+    },
     {
       title: 'LegisForum — Legal Tech Intake & Workload Platform',
       category: 'Full Stack Web Platform',
@@ -224,10 +258,10 @@ export const freelancerData = {
       name: 'Dedicated Contractor',
       badge: 'Full Capacity',
       description:
-        'Full-time senior full-stack & AI engineering capacity embedded directly into your agile product team.',
+        'Full-time senior full-stack, mobile & AI engineering capacity embedded directly into your agile product team.',
       features: [
         'Full integration with your sprint rituals and standups',
-        'High-velocity code contributions across frontend & backend',
+        'High-velocity code contributions across web, mobile & backend',
         'Multi-agent AI & RAG architecture leadership',
         'Priority emergency support & issue remediation',
         'Flexible monthly agreements',
@@ -247,6 +281,11 @@ export const freelancerData = {
         'Yes, 100%. All code, repositories, cloud configurations, and design assets belong entirely to you from day one. Full IP assignment is guaranteed.',
     },
     {
+      question: 'Can you build cross-platform mobile apps for iOS and Android?',
+      answer:
+        'Yes! I build native-performance mobile apps using React Native and Expo. For example, my OyeKake Food Delivery MVP unified Customer, Restaurant, and Rider experiences into a single Expo Android app with cloud EAS compilation.',
+    },
+    {
       question: 'How do we communicate throughout the project?',
       answer:
         'I maintain high transparency. We set up a dedicated Slack, Discord, or WhatsApp channel for day-to-day updates, coupled with weekly video walkthroughs and live staging URLs.',
@@ -259,7 +298,7 @@ export const freelancerData = {
     {
       question: 'What happens if there are bugs after delivery?',
       answer:
-        'All fixed-scope projects include a complimentary 14-day post-launch support and bug warranty window to guarantee smooth operations after going live.',
+        'All fixed-scope projects include a complimentary post-launch support and bug warranty window (typically 14 to 30 days) to guarantee smooth operations after going live.',
     },
   ],
 };

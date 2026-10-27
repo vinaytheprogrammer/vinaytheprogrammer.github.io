@@ -6,7 +6,7 @@ export const tutorData = {
   brandBadge: 'VG',
   badge: 'Enrolling for 1:1 Mentorship & DSA Cohorts',
   tagline:
-    'Bridging the gap between college theory and real-world software engineering. Learn Data Structures, Core CS Fundamentals, and Full-Stack Development from an engineer with 2+ years of production experience.',
+    'Bridging the gap between college theory and real-world software engineering. Learn Data Structures, Core CS Fundamentals, Full-Stack Development, and Open Source collaboration from an engineer with 2+ years of production experience.',
   education: 'NIT Jamshedpur (MCA) • UGC NET JRF Aspirant (CS Code 87)',
   location: 'India (Online 1:1 & Cohort Classes)',
   teachingRepo: 'https://github.com/vinaytheprogrammer/Teaching',
@@ -26,15 +26,15 @@ export const tutorData = {
   metrics: [
     { label: 'Industry Experience', value: '2+ Years Production SWE' },
     { label: 'Startup Teaching', value: 'Codingbits (Trainer)' },
+    { label: 'Mock Interviews', value: 'Junior Placement Coaching' },
     { label: 'Academic Standing', value: 'NIT Jamshedpur MCA' },
-    { label: 'Exam Focus', value: 'UGC NET JRF Aspirant' },
   ],
 
   bio: [
-    'I am a Computer Science Educator, Technical Mentor, and active Software Engineer with 2+ years of industry experience building enterprise platforms and Generative AI systems.',
-    'I hold a Master of Computer Applications (MCA) from the National Institute of Technology (NIT), Jamshedpur, and am actively preparing for the UGC NET JRF Examination in Computer Science & Applications (Subject Code 87)—bringing both academic rigor and industry execution to my teaching.',
-    'As an educator at Codingbits (an EdTech startup) and through personal 1-on-1 mentorship, I have guided college students, postgraduates, and career-switchers to master Data Structures & Algorithms, Core CS subjects (DBMS, OS, Networks), and Full-Stack Engineering.',
-    'Unlike traditional rote-learning courses, my mentorship uses an interactive, production-grade GitHub PR review workflow (via github.com/vinaytheprogrammer/Teaching) where students write clean code, receive line-by-line feedback, and develop the instincts needed to clear top technical interviews.',
+    'I am a Computer Science Educator, Technical Mentor, and active Software Engineer with 2+ years of industry experience building enterprise platforms, mobile applications, and Generative AI systems.',
+    'I hold a Master of Computer Applications (MCA) from NIT Jamshedpur and am actively preparing for the UGC NET JRF Examination in Computer Science & Applications (Subject Code 87)—bringing both theoretical rigor and enterprise execution to my teaching.',
+    'As an educator at Codingbits (an EdTech startup) and through personal 1-on-1 mentorship, I have conducted extensive mock technical interviews for collegiate juniors, guiding them to sharpen their algorithmic communication, pass stringent campus placement rounds, and build production-grade portfolios.',
+    'I am deeply passionate about open source and actively teach students how to break into open source, understand large unfamiliar codebases, master collaborative Git workflows (branches, rebasing, Pull Requests), and work with distributed teams to gain real-world industry exposure before graduating.',
   ],
 
   teachingExperience: [
@@ -52,6 +52,32 @@ export const tutorData = {
       ],
     },
     {
+      title: 'NIT Jamshedpur Junior Placement Assistance & Mock Interviews',
+      role: 'Campus Placement Mentor & Interviewer',
+      period: '2023 – Present',
+      summary:
+        'Conducted simulated technical coding interviews and placement assistance drills for collegiate juniors at NIT Jamshedpur, preparing them to crack product and service software engineering hiring rounds.',
+      highlights: [
+        '1-on-1 Simulated Interviews: Conducted timed 45–60 minute coding interviews simulating real Google, Amazon, and startup technical rounds.',
+        'Actionable Feedback: Evaluated problem-solving intuition, asymptotic complexity trade-offs, edge-case detection, and clear verbal communication.',
+        'Resume & Portfolio Audits: Assisted students in structuring ATS-optimized technical resumes, highlighting real projects, and articulating architectural decisions.',
+        'High Placement Conversion: Mentored multiple juniors who successfully secured on-campus placement offers and software engineering internships.',
+      ],
+    },
+    {
+      title: 'Open Source Mentorship & Team Collaboration Coaching',
+      role: 'Open Source Advocate & Community Mentor',
+      period: 'Ongoing',
+      summary:
+        'Empowering students and aspiring developers to contribute to real-world open-source repositories, gain industry exposure, and learn how professional engineering teams collaborate.',
+      highlights: [
+        'Repository Navigation: Taught students how to discover beginner-friendly issues (`good-first-issue`), read large unfamiliar production codebases, and understand project architectures.',
+        'Professional Git Standards: Trained mentees in feature branching, semantic commit conventions, interactive rebasing, and authoring clear, descriptive Pull Requests.',
+        'Collaborative Team Etiquette: Guided students on engaging respectfully with maintainers, addressing code review suggestions, and resolving merge conflicts.',
+        'Public Proof of Work: Mentored students on leveraging open-source contributions as tangible proof of capability that stands out directly to tech recruiters and engineering leads.',
+      ],
+    },
+    {
       title: 'Independent 1:1 CS Mentorship & Cohort Teaching',
       role: 'Private Computer Science Tutor & Mentor',
       period: '2023 – Present',
@@ -61,7 +87,6 @@ export const tutorData = {
         'GitHub PR-Based Learning Workflow: Built the open-source Teaching Repository (github.com/vinaytheprogrammer/Teaching) where students submit coding assignments via Pull Requests and receive rigorous line-by-line code reviews.',
         'Customized Student Roadmaps: Developed personalized learning roadmaps based on each student’s current level—from zero coding experience to cracking LeetCode medium/hard patterns.',
         'Core CS Deep Dives: Taught university & competitive-exam level Database Systems (SQL, Normalization, ACID), Operating Systems (CPU Scheduling, Concurrency, Paging), and Computer Networks.',
-        'High Student Conversion: Mentored students who successfully secured on-campus placement offers and internship roles in software development.',
       ],
     },
     {
@@ -97,6 +122,41 @@ export const tutorData = {
         'Heaps, Priority Queues & Greedy Algorithms',
         'Graphs: BFS, DFS, Dijkstra, Bellman-Ford, Disjoint Set Union (DSU)',
         'Dynamic Programming: 1D, 2D, Knapsack, Longest Common Subsequence, DP on Trees',
+      ],
+    },
+    {
+      id: 'mock-interviews',
+      title: 'Junior Placement Coaching & Mock Interviews',
+      badge: 'Campus Placement',
+      level: 'Placement Aspirants',
+      duration: '1–4 Weeks / Per Session',
+      languages: 'Candidate Choice',
+      description:
+        'Simulate real Google, Amazon, and startup technical interview rounds with immediate algorithmic, code-quality, and communication feedback.',
+      topics: [
+        '1-on-1 Timed Live Coding Interviews (45–60 mins) under realistic pressure',
+        'Evaluation on Problem Solving Intuition, Code Cleanliness, and Edge-Case Detection',
+        'Hints management: how to navigate mental blocks during interviews',
+        'ATS-optimized Technical Resume Review & Project Framing Audit',
+        'Behavioral & Cultural Interview coaching using the STAR method',
+      ],
+    },
+    {
+      id: 'open-source',
+      title: 'Open Source Contribution & Collaborative Git Workflows',
+      badge: 'Team Exposure',
+      level: 'All Levels',
+      duration: '3–4 Weeks',
+      languages: 'Git, GitHub, Any Tech Stack',
+      description:
+        'Learn how professional software teams collaborate. Discover open source projects, read real-world codebases, and submit production-ready Pull Requests.',
+      topics: [
+        'How to search & evaluate beginner-friendly issues (`good-first-issue`) on GitHub',
+        'Reading & navigating large unfamiliar production repositories without getting overwhelmed',
+        'Git Branching, Interactive Rebasing, Cherry-Picking, and Semantic Commit Messages',
+        'Authoring professional Pull Requests with test plans and visual proof',
+        'Code review etiquette: addressing maintainer feedback and resolving merge conflicts',
+        'Building a public contribution graph that attracts tech recruiters and hiring leads',
       ],
     },
     {
@@ -136,23 +196,6 @@ export const tutorData = {
         'Production Tooling: Git, GitHub Pull Requests, Vite, Docker basics, Cloud Deployment',
       ],
     },
-    {
-      id: 'mock-interviews',
-      title: 'Placement Coaching & Mock Technical Interviews',
-      badge: 'High Impact',
-      level: 'Placement Aspirants',
-      duration: '1–4 Weeks / Per Session',
-      languages: 'Candidate Choice',
-      description:
-        'Simulate real Google / Microsoft / startup technical interview rounds with immediate behavioral and algorithmic feedback.',
-      topics: [
-        '1-on-1 Live Coding Interview (45–60 mins) under realistic pressure',
-        'Evaluation on Problem Solving, Code Cleanliness, and Communication',
-        'Systematic hints when stuck without giving away the solution',
-        'In-depth ATS-friendly Resume Review and Project Audit',
-        'Behavioral & Cultural Interview coaching using the STAR method',
-      ],
-    },
   ],
 
   methodology: [
@@ -176,9 +219,9 @@ export const tutorData = {
     },
     {
       step: '04',
-      title: 'Continuous Retention & Revision',
+      title: 'Open Source & Real Team Collaboration',
       description:
-        'Spaced repetition problem sets and weekly recap challenges ensure you retain difficult concepts long after the lecture is finished.',
+        'Bridge the gap between solo coding and team engineering by contributing to public repositories, reading code, and collaborating through issues and PRs.',
     },
   ],
 
@@ -189,6 +232,16 @@ export const tutorData = {
         'My sessions are designed for BCA, MCA, and B.Tech students preparing for placements, working professionals wanting to transition into software development, and students preparing for university exams or UGC NET Computer Science.',
     },
     {
+      question: 'Do you offer mock interview sessions for college placement drives?',
+      answer:
+        'Yes! I regularly conduct 1-on-1 mock interviews for collegiate juniors, simulating real-world technical screening and bar-raiser rounds with detailed feedback on algorithmic thinking, communication, and resume optimization.',
+    },
+    {
+      question: 'How do you help students get started with Open Source?',
+      answer:
+        'I teach students how to find good beginner issues, understand repository architectures, use professional Git branching and PR etiquette, and interact productively with maintainers. Open-source contributions serve as tangible proof of capability for hiring managers.',
+    },
+    {
       question: 'How do the 1-on-1 sessions work?',
       answer:
         'Sessions are conducted online via Google Meet or Zoom with shared interactive code editors (Live Share / screen share). Every session includes hands-on coding, live question resolution, and post-session assignment reviews on GitHub.',
@@ -196,17 +249,12 @@ export const tutorData = {
     {
       question: 'What programming languages can I learn in?',
       answer:
-        'I teach Data Structures & Algorithms in C++, Java, Python, or JavaScript based on your preference. For web development, we focus on JavaScript and TypeScript.',
+        'I teach Data Structures & Algorithms in C++, Java, Python, or JavaScript based on your preference. For web development, we focus on JavaScript, TypeScript, React, and Node.js.',
     },
     {
       question: 'What makes your teaching different from recorded YouTube videos or bootcamps?',
       answer:
         'I have 2+ years of active software engineering experience at companies like SourceFuse, Rakuten, and Fleet Management Ltd. I teach how software is built and reviewed in the real world. You get personal attention, live code debugging, and GitHub PR reviews that no pre-recorded video can provide.',
-    },
-    {
-      question: 'How can I book a session or join an upcoming batch?',
-      answer:
-        'You can send an inquiry directly through the form below or email vinaygupta.nitjsr@gmail.com with your current background, goals, and preferred subjects. We will schedule a free introductory call to assess your roadmap.',
     },
   ],
 };
