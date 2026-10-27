@@ -16,10 +16,9 @@ export const freelancerData = {
   navLinks: [
     { name: 'Services', href: '#services' },
     { name: 'Case Studies', href: '#case-studies' },
-    { name: 'Process', href: '#process' },
     { name: 'Tech Stack', href: '#tech-stack' },
     { name: 'FAQ', href: '#faq' },
-    { name: 'Hire Me', href: '#contact' },
+    { name: 'Contact', href: '#contact' },
   ],
 
   metrics: [

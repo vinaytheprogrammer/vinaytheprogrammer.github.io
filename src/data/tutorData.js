@@ -15,13 +15,11 @@ export const tutorData = {
   linkedin: 'https://www.linkedin.com/in/vinaygupta-nitjsr/',
 
   navLinks: [
-    { name: 'About Teaching', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Achievements', href: '#achievements' },
-    { name: 'Curriculum', href: '#curriculum' },
-    { name: 'Methodology', href: '#methodology' },
+    { name: 'Courses', href: '#curriculum' },
     { name: 'FAQ', href: '#faq' },
-    { name: 'Book Session', href: '#contact' },
+    { name: 'Contact', href: '#contact' },
   ],
 
   metrics: [
