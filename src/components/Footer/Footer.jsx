@@ -8,24 +8,6 @@ import './Footer.css';
 const Footer = () => {
   const { currentRoute, navigate } = useNavigation();
 
-  const counterConfig = {
-    '/': {
-      url: 'https://komarev.com/ghpvc/?username=vinaytheprogrammer-portfolio-swe&label=SWE+Page+Visits&color=2563eb&style=flat-square',
-      label: 'SWE Profile Visits',
-    },
-    '/tutor': {
-      url: 'https://komarev.com/ghpvc/?username=vinaytheprogrammer-portfolio-tutor&label=Tutor+Page+Visits&color=10b981&style=flat-square',
-      label: 'Tutor Portal Visits',
-    },
-    '/freelancer': {
-      url: 'https://komarev.com/ghpvc/?username=vinaytheprogrammer-portfolio-freelancer&label=Freelance+Visits&color=8b5cf6&style=flat-square',
-      label: 'Freelance Visits',
-    },
-  }[currentRoute] || {
-    url: 'https://komarev.com/ghpvc/?username=vinaytheprogrammer-portfolio-swe&label=SWE+Page+Visits&color=2563eb&style=flat-square',
-    label: 'SWE Profile Visits',
-  };
-
   return (
     <footer className="footer-wrapper">
       <div className="container footer-container">
@@ -66,16 +48,6 @@ const Footer = () => {
             <span className="footer-brand-name">Vinay Gupta</span>
             <span className="footer-dot">•</span>
             <span className="footer-tag">NIT Jamshedpur MCA</span>
-          </div>
-
-          <div className="footer-counter-badge" title={counterConfig.label}>
-            <img
-              key={currentRoute}
-              src={counterConfig.url}
-              alt={counterConfig.label}
-              className="footer-counter-img"
-              height="22"
-            />
           </div>
 
           <p className="footer-copy">

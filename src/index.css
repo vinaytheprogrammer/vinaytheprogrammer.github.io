@@ -301,22 +301,7 @@ img {
   flex-wrap: wrap;
 }
 
-.hero-counter-badge {
-  display: inline-flex;
-  align-items: center;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  transition: transform var(--transition-fast);
-}
 
-.hero-counter-badge:hover {
-  transform: translateY(-2px);
-}
-
-.hero-counter-badge img {
-  display: block;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

@@ -7,6 +7,7 @@ import TutorView from './views/TutorView';
 import FreelancerView from './views/FreelancerView';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import VisitorCounter from './components/VisitorCounter/VisitorCounter';
 import { useNavigation } from './contexts/NavigationContext';
 
 const App = () => {
@@ -86,6 +87,7 @@ const App = () => {
       </main>
       <Footer />
       <ScrollToTop />
+      <VisitorCounter />
     </div>
   );
 };
