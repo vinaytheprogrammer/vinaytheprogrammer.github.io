@@ -1,37 +1,97 @@
-.about {
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.about-bio-card {
+  padding: 2.5rem;
+  display: flex;
   flex-direction: column;
-  margin-top: 3em;
+  justify-content: space-between;
 }
 
-.about__name {
-  color: var(--clr-primary);
+.about-bio-title {
+  font-size: 1.55rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
 }
 
-.about__role {
-  margin-top: 1.2em;
-}
-
-.about__desc {
+.about-bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  color: var(--text-secondary);
   font-size: 1rem;
-  max-width: 600px;
+  line-height: 1.7;
 }
 
-.about__desc,
-.about__contact {
-  margin-top: 2.4em;
+.about-quote {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+  background: rgba(59, 130, 246, 0.06);
+  border-left: 3px solid var(--accent-primary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-primary);
 }
 
-.about .link--icon {
-  margin-right: 0.8em;
+.quote-icon {
+  color: var(--accent-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
-.about .btn--outline {
-  margin-right: 1em;
+.about-strengths-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.strength-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.strength-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-primary);
+  margin-bottom: 0.25rem;
+}
+
+.strength-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.strength-description {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
-  .app .about {
-    align-items: flex-start;
-    margin-top: 2em;
+  .about-bio-card {
+    padding: 1.75rem;
   }
 }

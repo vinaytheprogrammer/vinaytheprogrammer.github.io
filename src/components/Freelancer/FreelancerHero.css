@@ -1,0 +1,49 @@
+.freelancer-hero-section {
+  padding: 8rem 0 4rem;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: radial-gradient(circle at 50% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 65%);
+}
+
+.freelance-badge {
+  border-color: rgba(139, 92, 246, 0.3) !important;
+  background: rgba(139, 92, 246, 0.08) !important;
+  color: #a78bfa !important;
+}
+
+.status-dot.purple {
+  background: #a78bfa;
+  box-shadow: 0 0 10px #a78bfa;
+}
+
+.freelance-gradient {
+  background: linear-gradient(135deg, #c084fc 0%, #818cf8 50%, #38bdf8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.freelancer-hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin-top: -0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.freelance-icon {
+  color: #a78bfa;
+}
+
+.freelance-btn-primary {
+  background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%) !important;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3) !important;
+}
+
+.freelance-btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.45) !important;
+}
+
+.freelance-metric-card:hover {
+  border-color: rgba(139, 92, 246, 0.4) !important;
+}

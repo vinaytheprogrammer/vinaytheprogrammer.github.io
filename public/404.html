@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vinay Gupta | Redirecting...</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      var path = l.pathname;
+
+      // Handle direct routes
+      if (path.indexOf('/tutor') !== -1) {
+        l.replace('/tutor/' + (l.search ? l.search : '') + (l.hash ? l.hash : ''));
+      } else if (path.indexOf('/freelancer') !== -1) {
+        l.replace('/freelancer/' + (l.search ? l.search : '') + (l.hash ? l.hash : ''));
+      } else {
+        l.replace('/' + (l.search ? l.search : '') + (l.hash ? l.hash : ''));
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to Vinay Gupta's portfolio...</p>
+  </body>
+</html>
